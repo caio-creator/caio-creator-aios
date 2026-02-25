@@ -1,0 +1,8 @@
+.page { display: flex; flex-direction: column; gap: var(--space-8); }
+.title { font-size: var(--text-2xl); font-weight: 600; }
+.subtitle { font-size: var(--text-sm); color: var(--color-text-muted); margin-top: calc(-1 * var(--space-6)); }
+.metrics { display: flex; gap: var(--space-4); flex-wrap: wrap; }
+.sectionTitle { font-size: var(--text-lg); font-weight: 600; margin-bottom: var(--space-4); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-4); }
+.loading { color: var(--color-text-muted); }
+.empty { color: var(--color-text-muted); font-size: var(--text-sm); }
