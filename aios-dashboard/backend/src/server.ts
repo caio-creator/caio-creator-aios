@@ -6,7 +6,7 @@ import agentsRouter from './routes/agents';
 import modulesRouter from './routes/modules';
 import storiesRouter from './routes/stories';
 
-export const REPO_ROOT = path.resolve(__dirname, '../../../../');
+export const REPO_ROOT = path.resolve(__dirname, '../../../');
 
 const app = express();
 app.use(cors());

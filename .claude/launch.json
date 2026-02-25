@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "health-dashboard",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /Users/caio_almeida/Documents/caio-creator-aios/.aios-core/scripts/diagnostics/health-dashboard && npm run dev"],
+      "port": 3001
+    },
+    {
+      "name": "aios-dashboard",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /Users/caio_almeida/Documents/caio-creator-aios/aios-dashboard/frontend && npm run dev"],
+      "port": 5175
+    }
+  ]
+}
