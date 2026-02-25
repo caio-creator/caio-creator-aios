@@ -1,0 +1,120 @@
+workspace:
+  client_name: "GetShake®"
+  client_slug: "getshake"
+  project_type: "branding+agenting"  # B2B agency — branding completo + agentes operacionais
+
+  created_at: "2026-02-23"
+  updated_at: "2026-02-23"
+  target_delivery: "2026-03-15"
+
+  brand_director: "@brand-director"
+  project_owner: "Caio Almeida"
+  client_contact: "Felipe Pastore (Comercial) | Felipe Iacocca (Comercial)"
+
+status:
+  current: "brandbook"  # Diretrizes já existem — fase de compilação e agenting
+  phase_number: 9
+  completion_percent: 75
+
+  phases:
+    01_briefing: true       # Feito — insumos do Obsidian + demandas do Felipe Pastore
+    02_positioning: true    # Feito — posicionamento Geoffrey Moore, FDaP, território
+    03_audience: true       # Feito — 4 personas (CMO, Founder, Brand Manager, Creator)
+    04_voice: true          # Feito — 3 níveis de voz, filtro FDaP, vocabulário
+    05_narrative: true      # Feito — narrativa 3 atos, brand story
+    06_editorial: true      # Feito — grade semanal 7 dias, 3 formatos por dia
+    07_visual: true         # Feito — paleta, tipografia, logo, fotografia
+    08_digital: true        # Feito — SHAKE.AI 4 camadas, 12 etapas, 54 métricas
+    09_brandbook: false     # Em andamento — compilar brand-book.md
+    brand_completeness_gate: false
+    client_delivery_gate: false
+    delivered: false
+
+client_context:
+  industry: "Marketing de Influência | Creators Economy | MarTech"
+  business_type: "B2B — Plataforma híbrida (agência + tech)"
+  stage: "Growth — plataforma em expansão com produto SHAKE.AI"
+  main_channels: ["instagram", "linkedin", "tiktok"]
+  key_differentiator: "Sistema operacional de influência — IA proprietária + curadoria humana especializada. Transforma briefing em campanha, dados em decisões, conversas em entregas."
+
+method:
+  mode: "interactive"
+  second_brain_enabled: false
+  gpt_builder_enabled: true
+  gpt_builder_config:
+    status: "blueprints_ready"  # blueprints criados, aguardando deploy no OpenAI
+    openai_plan_required: "Plus"
+    last_updated: "2026-02-24"
+    target_audience: "time_interno"  # uso restrito: comercial + curadoria + operação
+    planned_gpts:
+      - name: "GetShake IRIS — Briefing Intake"
+        codinome: "IRIS"
+        blueprint: "gpt-builder/gpt-briefing-intake-blueprint.md"
+        jtbd: "Transformar pedido fragmentado em briefing estruturado e acionável"
+        team: "comercial"
+        deploy_status: "pending"  # pending | live | deprecated
+      - name: "GetShake NEXO — Proposal Generator"
+        codinome: "NEXO"
+        blueprint: "gpt-builder/gpt-proposal-generator-blueprint.md"
+        jtbd: "Gerar proposta comercial calibrada por persona de buyer"
+        team: "comercial"
+        deploy_status: "pending"
+      - name: "GetShake RADAR — Creator Presentation"
+        codinome: "RADAR"
+        blueprint: "gpt-builder/gpt-creator-presentation-blueprint.md"
+        jtbd: "Aplicar 9 critérios SHAKE.AI e gerar deck de curadoria para aprovação do cliente"
+        team: "curadoria"
+        deploy_status: "pending"
+    published_gpts: []
+    note: "GPTs são versões ChatGPT dos agentes AIOS (agents/). Recomendado para demos e uso sem acesso ao AIOS."
+  reference_profiles:
+    - "filipePastore"  # Fundador GetShake
+    - "felipeIacocca"  # Comercial GetShake
+  agenting_enabled: true
+  planned_agents:
+    - "getshake-briefing-intake"       # Receber e processar briefings de clientes
+    - "getshake-proposal-generator"    # Gerar propostas e contratos
+    - "getshake-creator-presentation"  # Apresentação de creators para aprovação
+
+key_decisions:
+  - date: "2026-01-21"
+    phase: "briefing"
+    decision: "FDaP como filtro universal de todas as comunicações"
+    rationale: "Rápido. Delicioso. Quase Perfeito. — reflete a filosofia operacional da marca"
+  - date: "2026-01-21"
+    phase: "positioning"
+    decision: "Posicionamento Geoffrey Moore com diferencial duplo: IA + curadoria humana"
+    rationale: "Mercado fragmentado entre agências lentas e marketplaces sem curadoria — GetShake ocupa o meio com o melhor dos dois"
+  - date: "2026-01-21"
+    phase: "voice"
+    decision: "3 níveis de voz: Institucional / Operacional / Cultural-Street"
+    rationale: "Audiências muito distintas (C-Level vs. Creators) exigem calibragem de tom"
+  - date: "2026-02-23"
+    phase: "agenting"
+    decision: "Desenvolvimento de agentes para briefing, proposta e apresentação de creators"
+    rationale: "Próximo ciclo de trabalho — automatizar os fluxos operacionais com IA"
+
+notes: |
+  GETSHAKE É UM CLIENTE B2B — NÃO UMA MARCA PESSOAL.
+
+  Particularidades:
+  - Dois lados de mercado: Buyers (marcas clientes) e Sellers (creators)
+  - Produto: SHAKE.AI — plataforma proprietária de IA
+  - Operação: 5 fases, 12 etapas, 54 métricas
+  - Time: Comercial (Felipes), Financeiro/Jurídico (Somr), Operação (Aninha, Bella, Gustavo, Caio)
+
+  Insumos disponíveis (onboarding concluído):
+  - Diretrizes completas: clients/getshake/01-diretrizes/GetShake_Diretrizes_Marca_Completas.md
+  - Demandas: clients/getshake/02-demandas/GetShake_Demandas_Felipe_Pastore.md
+  - Pitch comercial: clients/getshake/03-pitch/GetShake_Copy_Pitch_Comercial_6Slides.md
+  - Manual operacional: clients/getshake/05-manual/GetShake_Manual_Operacional_Completo.md
+  - Fluxo de equipe: GetShake • ESTRUTURA DA EQUIPE ATUALIZADA.md (Obsidian)
+
+  Demandas do Felipe Pastore (backlog de agentes):
+  1. Agente de briefing (recepção e processamento de briefings de clientes)
+  2. Agente de proposta/contrato (geração automática)
+  3. Agente de apresentação de creators (para aprovação do cliente)
+
+  Cores principais:
+  - Verde Ácido GetShake: #04FF93 (acento principal)
+  - Preto: #000000 | Off-White: #EBE6DA | Grafite: #1A1A1A

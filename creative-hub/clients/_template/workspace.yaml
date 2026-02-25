@@ -1,0 +1,62 @@
+workspace:
+  # Metadados do projeto
+  client_name: "[Nome completo do cliente/marca]"
+  client_slug: "[kebab-case-identificador]"
+  project_type: "branding" # branding | branding+second-brain | branding+agenting | full
+
+  # Datas
+  created_at: "[YYYY-MM-DD]"
+  updated_at: "[YYYY-MM-DD]"
+  target_delivery: "[YYYY-MM-DD]"
+
+  # Responsáveis
+  brand_director: "@brand-director"  # Agente Atlas
+  project_owner: "[Seu nome/email]"
+  client_contact: "[Nome e contato do cliente]"
+
+# Status do projeto
+status:
+  current: "briefing"  # briefing | positioning | audience | voice | narrative | editorial | visual | digital | brandbook | delivered
+  phase_number: 1
+  completion_percent: 0
+
+  # Fases concluídas (marcar conforme avança)
+  phases:
+    01_briefing: false
+    02_positioning: false
+    03_audience: false
+    04_voice: false
+    05_narrative: false
+    06_editorial: false
+    07_visual: false
+    08_digital: false
+    09_brandbook: false
+    brand_completeness_gate: false
+    client_delivery_gate: false
+    delivered: false
+
+# Contexto do cliente
+client_context:
+  industry: "[Setor de atuação]"
+  business_type: "[B2B / B2C / Personal Brand / Produto / Serviço]"
+  stage: "[Startup / Crescimento / Consolidada / Rebranding]"
+  main_channels: []  # instagram, linkedin, tiktok, email, youtube, etc.
+  key_differentiator: "[Em 1 frase — o que torna único antes do processo]"
+
+# Configuração do método
+method:
+  mode: "interactive"  # interactive | yolo | pre-flight
+  second_brain_enabled: false
+  reference_profiles: []  # ["nome-referencia-1", "nome-referencia-2"]
+  agenting_enabled: false
+
+# Decisões-chave registradas
+key_decisions: []
+  # - date: "[YYYY-MM-DD]"
+  #   phase: "[fase]"
+  #   decision: "[O que foi decidido]"
+  #   rationale: "[Por quê]"
+
+# Notas e observações
+notes: |
+  [Notas livres sobre o projeto, contexto especial, sensibilidades do cliente, etc.]

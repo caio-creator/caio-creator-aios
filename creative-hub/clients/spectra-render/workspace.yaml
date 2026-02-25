@@ -1,0 +1,65 @@
+client: spectra-render
+display_name: "Spectra Render®"
+brand_name: "Spectra ❍ Render"
+created_at: "2026-02-22"
+agent: "@brand-director (Atlas)"
+framework: "Caio Creator AIOS — Método de Branding Sequencial v1.0"
+
+status: active
+current_phase: 9-brand-book-compiled
+
+phases:
+  "1-briefing":
+    status: completed
+    file: briefing/brand-briefing.md
+  "2-positioning":
+    status: completed
+    file: brand-guidelines/positioning.md
+  "3-audience":
+    status: completed
+    file: brand-guidelines/audience.md
+  "4-voice":
+    status: completed
+    file: brand-guidelines/voice-and-tone.md
+  "5-narrative":
+    status: completed
+    file: brand-guidelines/narrative.md
+  "6-editorial":
+    status: completed
+    file: brand-guidelines/editorial.md
+  "7-visual-brief":
+    status: completed
+    file: brand-guidelines/visual-brief.md
+  "8-digital":
+    status: completed
+    file: brand-guidelines/digital-guidelines.md
+  "9-brand-book":
+    status: completed
+    file: deliverables/brand-book.md
+
+deliverables:
+  - file: deliverables/brand-book.md
+    description: "Brand book completo v1.0"
+    status: ready
+  - file: deliverables/whatsapp-catalog.md
+    description: "Catálogo WhatsApp Business completo (Sprints + Eventos)"
+    status: ready
+
+service_lines:
+  - name: "Validação Estratégica"
+    type: B2B
+    channel: site institucional
+    ticket: "R$249 entrada / R$2.500+/mês recorrente"
+  - name: "Sprint Residencial"
+    type: B2C
+    channel: WhatsApp Business
+    ticket: "R$299/sprint + R$100 upgrade"
+  - name: "Eventos & Festivais"
+    type: B2B-Experiential
+    channel: WhatsApp + contato direto
+    ticket: "Sob consulta"
+
+sources:
+  - "Spectra Render • Copy Landing Page (Final).md"
+  - "Spectra ❍ Render — Catálogo WhatsApp + Prompts (169 · 1920×1080).md"
+  - "spectrarender.framer.website"

@@ -1,0 +1,95 @@
+workspace:
+  client_name: "Caio © Creator"
+  client_slug: "caio-creator"
+  project_type: "branding"  # Marca pessoal — personal brand
+
+  created_at: "2026-02-22"
+  updated_at: "2026-02-22"
+  target_delivery: "2026-03-15"
+
+  brand_director: "@brand-director"
+  project_owner: "Caio Almeida"
+  client_contact: "Caio Almeida (é o próprio cliente)"
+
+status:
+  current: "briefing"
+  phase_number: 1
+  completion_percent: 0
+
+  phases:
+    01_briefing: false
+    02_positioning: false
+    03_audience: false
+    04_voice: false
+    05_narrative: false
+    06_editorial: false
+    07_visual: false
+    08_digital: false
+    09_brandbook: false
+    brand_completeness_gate: false
+    client_delivery_gate: false
+    delivered: false
+
+client_context:
+  industry: "Branding, Criatividade, Estratégia de Conteúdo, IA Agêntica"
+  business_type: "Personal Brand"
+  stage: "Lançamento"
+  main_channels: ["instagram"]
+  key_differentiator: "Transforma metodologias complexas em frameworks elegantes — com a profundidade de um filósofo e a precisão de um estrategista"
+
+method:
+  mode: "interactive"
+  second_brain_enabled: false
+  gpt_builder_enabled: true
+  gpt_builder_config:
+    status: "blueprints_ready"  # blueprints criados, aguardando deploy no OpenAI
+    openai_plan_required: "Plus"
+    last_updated: "2026-02-24"
+    planned_gpts:
+      - name: "Caio Ghostwriter"
+        blueprint: "gpt-builder/gpt-ghostwriter-blueprint.md"
+        jtbd: "Criar conteúdo no tom exato da marca Caio Creator"
+        deploy_status: "pending"  # pending | live | deprecated
+      - name: "Caio Content Strategist"
+        blueprint: "gpt-builder/gpt-content-strategist-blueprint.md"
+        jtbd: "Gerar pautas editoriais alinhadas com pilares e fase atual"
+        deploy_status: "pending"
+      - name: "Caio Brand Mentor"
+        blueprint: "gpt-builder/gpt-brand-mentor-blueprint.md"
+        jtbd: "Consultoria de posicionamento baseada na metodologia Caio Creator"
+        deploy_status: "pending"
+    published_gpts: []
+  reference_profiles:
+    - "thefounders.br"
+    - "blankschoolbr"
+    - "junkieconcept"
+    - "lyenclub"
+    - "omeditante"
+    - "nowdays"
+    - "brandsdecoded__"
+  agenting_enabled: false
+
+key_decisions:
+  - date: "2026-02-22"
+    phase: "pre-briefing"
+    decision: "Insumos pré-mapeados antes do discovery formal"
+    rationale: "Caio já tem numerologia, histórico de conteúdo e metodologias documentadas — aproveitar como base para pré-popular o briefing"
+
+notes: |
+  Cliente especial: Caio é o criador do próprio framework (Synkra AIOS) e do método
+  de branding que está sendo aplicado. A marca precisa refletir esse paradoxo central:
+  o arquiteto de sistemas que pensa em frameworks, mas com alma filosófica e libertária.
+
+  Insumos disponíveis:
+  - Perfil numerológico Teledipity: /Downloads/Perfil_Numerologico_Caio_Teledipity.md
+  - Perfil numerológico completo (PDF): /Downloads/analise_numerologica_completa_caio.md.pdf
+  - Companie Culture Content GPT: /Documents/gpt_builder_companie_culture_content_doc_oficial_v_3.md
+  - BOT Criativo metodologia: /Documents/BOT Criativo.md
+  - Perfis Instagram para referência: escanear ao vivo durante Fases 6 e 8
+
+  Paradoxos centrais identificados (Teledipity):
+  - Solidão (Caminho 7) vs. Sociabilidade (Personalidade 3)
+  - Especialização vs. Versatilidade (Desejos 5)
+  - Análise vs. Ação
+  - Controle vs. Delegação (Talentos 8)
+  - Emoção vs. Lógica

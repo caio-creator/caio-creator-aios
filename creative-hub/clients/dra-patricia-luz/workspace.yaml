@@ -1,0 +1,80 @@
+workspace:
+  # Metadados do projeto
+  client_name: "Dra. Patrícia Luz"
+  client_slug: "dra-patricia-luz"
+  project_type: "branding"
+
+  # Datas
+  created_at: "2026-02-20"
+  updated_at: "2026-02-20"
+  target_delivery: "2026-03-06"
+
+  # Responsáveis
+  brand_director: "@brand-director"  # Agente Atlas
+  project_owner: "Caio Creator"
+  client_contact: "Dra. Patrícia Luz | drapatricialuz@gmail.com | 55 11 94108 5051"
+
+# Status do projeto
+status:
+  current: "brandbook"
+  phase_number: 9
+  completion_percent: 100
+
+  # Fases concluídas (marcar conforme avança)
+  phases:
+    01_briefing: true
+    02_positioning: true
+    03_audience: true
+    04_voice: true
+    05_narrative: true
+    06_editorial: true
+    07_visual: true
+    08_digital: true
+    09_brandbook: true
+    brand_completeness_gate: true
+    client_delivery_gate: false
+    delivered: false
+
+# Contexto do cliente
+client_context:
+  industry: "Odontologia / Saúde Bucal"
+  business_type: "B2C / Personal Brand / Serviço"
+  stage: "Crescimento"
+  main_channels:
+    - instagram  # @patricialuz.odonto — canal principal
+    - email       # drapatricialuz@gmail.com
+    - whatsapp    # 55 11 94108 5051
+  key_differentiator: "Atendimento humanizado, personalizado e acolhedor — com disponibilidade aos sábados (8h-18h)"
+
+# Configuração do método
+method:
+  mode: "yolo"  # Briefing já completo via PDF — execução autônoma
+  second_brain_enabled: false
+  reference_profiles: []
+  agenting_enabled: false
+
+# Decisões-chave registradas
+key_decisions:
+  - date: "2026-02-20"
+    phase: "setup"
+    decision: "Executar em modo yolo — briefing completo coletado via formulário PDF"
+    rationale: "Todos os 7 blocos de informação já disponíveis. Não há necessidade de elicitation interativa."
+  - date: "2026-02-20"
+    phase: "setup"
+    decision: "Inspirações visuais: Tiffany + Disney + Calvin Klein"
+    rationale: "Cliente indicou explicitamente. Síntese: elegante, acolhedora, limpa — sofisticação acessível."
+  - date: "2026-02-20"
+    phase: "setup"
+    decision: "Restrição de logo: sem escovas, dentes inteiros ou instrumentos odontológicos"
+    rationale: "Instrução direta do cliente. Diferencia da identidade visual genérica do setor."
+
+# Notas e observações
+notes: |
+  Cliente nova. Briefing coletado via formulário em 19/02/2026.
+  Consultório odontológico com atendimento B2C foco humanizado.
+  Posicionamento intermediário — nem luxo nem convênio.
+  Diferencial competitivo relevante: único a atender sábados 8h-18h na região.
+  Interseção estratégica: saúde bucal → saúde mental (bruxismo, autoestima, bem-estar).
+  Entregáveis visuais solicitados: assinatura email, banner, cartão digital, cartão impresso,
+  papel timbrado, sacola, wallpaper, capas Instagram, destaques Instagram.
+  CRO: 157579

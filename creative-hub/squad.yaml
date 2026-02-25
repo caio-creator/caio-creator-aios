@@ -1,0 +1,48 @@
+name: "caio-creator-hub"
+version: 1.0.0
+description: "Hub criativo do Caio Creator: método de branding, segundo cérebro e documentação agêntica"
+author: "Caio Almeida"
+license: MIT
+
+aios:
+  minVersion: "2.1.0"
+  type: squad
+
+components:
+  agents:
+    - agents/*.md
+  tasks:
+    - tasks/*.md
+  workflows:
+    - workflows/*.yaml
+  templates:
+    - templates/*.md
+  checklists:
+    - checklists/*.md
+  data:
+    - data/*.md
+
+dependencies: []
+
+keywords:
+  - branding
+  - second-brain
+  - agenting
+  - creative
+  - prompts
+  - diretrizes-de-marca
+  - brand-guidelines
+  - caio-creator
+  - content-production
+  - carousel-generation
+  - copy
+
+agents:
+  - id: brand-director
+    name: Atlas
+    file: agents/brand-director.md
+    whenToUse: Desenvolver diretrizes completas de marca, executar as 9 fases de branding, compilar brand book
+  - id: content-producer
+    name: Verso
+    file: agents/content-producer.md
+    whenToUse: Gerar carrosséis completos prontos para publicação, opções de ganchos, grades semanais e validação de copy
