@@ -1,0 +1,167 @@
+{
+  "$schema": "https://tokens.studio/schemas/3/schema.json",
+  "$version": "1.0.0",
+  "name": "Design Tokens",
+  "color": {
+    "primary": {
+      "50": {
+        "$value": "#f0f9ff",
+        "$type": "color"
+      },
+      "100": {
+        "$value": "#e0f2fe",
+        "$type": "color"
+      },
+      "500": {
+        "$value": "#0ea5e9",
+        "$type": "color"
+      },
+      "900": {
+        "$value": "#0c2d6b",
+        "$type": "color"
+      }
+    },
+    "secondary": {
+      "500": {
+        "$value": "#8b5cf6",
+        "$type": "color"
+      }
+    },
+    "danger": {
+      "500": {
+        "$value": "#ef4444",
+        "$type": "color"
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": {
+        "$value": "system-ui, -apple-system, sans-serif",
+        "$type": "fontFamily"
+      },
+      "mono": {
+        "$value": "ui-monospace, monospace",
+        "$type": "fontFamily"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "$value": "12px",
+        "$type": "fontSize"
+      },
+      "sm": {
+        "$value": "14px",
+        "$type": "fontSize"
+      },
+      "base": {
+        "$value": "16px",
+        "$type": "fontSize"
+      },
+      "lg": {
+        "$value": "18px",
+        "$type": "fontSize"
+      },
+      "xl": {
+        "$value": "20px",
+        "$type": "fontSize"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "$value": "1.2",
+        "$type": "lineHeight"
+      },
+      "normal": {
+        "$value": "1.5",
+        "$type": "lineHeight"
+      },
+      "relaxed": {
+        "$value": "1.75",
+        "$type": "lineHeight"
+      }
+    }
+  },
+  "spacing": {
+    "0": {
+      "$value": "0px",
+      "$type": "dimension"
+    },
+    "1": {
+      "$value": "4px",
+      "$type": "dimension"
+    },
+    "2": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "3": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "4": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "6": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "8": {
+      "$value": "32px",
+      "$type": "dimension"
+    },
+    "12": {
+      "$value": "48px",
+      "$type": "dimension"
+    },
+    "16": {
+      "$value": "64px",
+      "$type": "dimension"
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "$value": "0px",
+      "$type": "dimension"
+    },
+    "sm": {
+      "$value": "2px",
+      "$type": "dimension"
+    },
+    "base": {
+      "$value": "4px",
+      "$type": "dimension"
+    },
+    "md": {
+      "$value": "6px",
+      "$type": "dimension"
+    },
+    "lg": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "xl": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "full": {
+      "$value": "9999px",
+      "$type": "dimension"
+    }
+  },
+  "shadow": {
+    "sm": {
+      "$value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "$type": "shadow"
+    },
+    "md": {
+      "$value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "$type": "shadow"
+    },
+    "lg": {
+      "$value": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      "$type": "shadow"
+    }
+  }
+}
