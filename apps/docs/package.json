@@ -9,8 +9,8 @@
     "preview": "http-server ./storybook-static"
   },
   "dependencies": {
-    "@design-system/components": "workspace:*",
-    "@design-system/tokens": "workspace:*",
+    "@caio-creator/components": "workspace:*",
+    "@caio-creator/tokens": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
