@@ -1,24 +1,35 @@
 {
   "name": "@caio-creator/components",
   "version": "0.0.1",
-  "private": true,
-  "description": "React components for the design system",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "description": "Design System Components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "type-check": "tsc --noEmit"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@caio-creator/tokens": "workspace:*"
+    "@radix-ui/react-primitive": "1.0.1",
+    "@radix-ui/react-dialog": "1.1.1",
+    "@radix-ui/react-tabs": "1.0.4",
+    "@radix-ui/react-dropdown-menu": "2.0.5",
+    "react": "^18.2.0"
   },
   "devDependencies": {
-    "react": "^18.2.0",
+    "@caio-creator/tokens": "workspace:*",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.5.0",
+    "jest-axe": "^8.0.0",
+    "jest-environment-jsdom": "^29.5.0",
     "react-dom": "^18.2.0",
-    "typescript": "^5.3.0"
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
   },
   "peerDependencies": {
     "react": "^18.0.0",
