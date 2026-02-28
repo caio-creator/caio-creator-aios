@@ -1,0 +1,23 @@
+{
+  "name": "caio-creator-aios",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Design System Enterprise using subagent-driven development",
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "test": "turbo run test",
+    "test:watch": "turbo run test -- --watch",
+    "dev": "turbo run dev --parallel",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "turbo": "^1.12.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.4"
+}
