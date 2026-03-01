@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Post — Caio Creator</title>
+    <style>
+        body { margin: 0; padding: 20px; background: #f5f5f5; font-family: Inter, sans-serif; }
+        .canvas { background: white; padding: 30px; border-radius: 8px; }
+        .post {
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #0A0A0B 0%, #27272A 100%);
+            border-radius: 8px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #FAFAFA;
+            position: relative;
+            overflow: hidden;
+        }
+        .post-accent {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #2563EB, #F97316);
+            border-radius: 8px;
+            opacity: 0.9;
+        }
+        .post-header {
+            position: relative;
+            z-index: 2;
+        }
+        .post-logo { font-size: 28px; font-weight: 700; margin-bottom: 40px; }
+        .post-content {
+            position: relative;
+            z-index: 2;
+        }
+        .post-headline {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .post-text {
+            font-size: 14px;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+        .post-cta {
+            position: relative;
+            z-index: 2;
+            background: #2563EB;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <h2 style="margin-bottom: 20px; color: #333; font-size: 18px;">Instagram Post (1080x1080px)</h2>
+        <div class="post">
+            <div class="post-accent"></div>
+            <div class="post-header">
+                <div class="post-logo">CAIO</div>
+            </div>
+            <div class="post-content">
+                <div class="post-headline">Seu Posicionamento é Seu Moat</div>
+                <div class="post-text">Audiência grande não paga contas. Posicionamento estratégico sim.</div>
+                <div class="post-cta">Saiba mais →</div>
+            </div>
+        </div>
+        <p style="margin-top: 20px; color: #666; font-size: 12px;">
+            💡 Dark background (1200x1200 social export), brand accent, clear call-to-action
+        </p>
+    </div>
+</body>
+</html>
