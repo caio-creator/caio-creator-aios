@@ -1,0 +1,46 @@
+{
+  "colors": {
+    "primary": "#2563EB",
+    "secondary": "#F97316",
+    "success": "#10B981",
+    "warning": "#F59E0B",
+    "error": "#EF4444",
+    "neutral-50": "#F9FAFB",
+    "neutral-900": "#0A0A0B",
+    "neutral-500": "#6B7280"
+  },
+  "typography": {
+    "headline-1": {
+      "font": "Inter",
+      "size": "48px",
+      "weight": 700,
+      "lineHeight": "1.2"
+    },
+    "headline-2": {
+      "font": "Inter",
+      "size": "36px",
+      "weight": 700,
+      "lineHeight": "1.25"
+    },
+    "body": {
+      "font": "Inter",
+      "size": "16px",
+      "weight": 400,
+      "lineHeight": "1.6"
+    }
+  },
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "32px",
+    "2xl": "48px"
+  },
+  "radius": {
+    "sm": "4px",
+    "md": "8px",
+    "lg": "12px",
+    "full": "9999px"
+  }
+}
