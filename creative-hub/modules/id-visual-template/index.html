@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Identity — <span id="brandName">Loading...</span></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo-creative-hub">Caio Creator</div>
+            <h1 id="brandName" class="header-title">Loading...</h1>
+        </div>
+        <div class="header-right">
+            <div class="theme-toggle">
+                <button class="theme-btn" data-theme="light">Light</button>
+                <button class="theme-btn" data-theme="dark">Dark</button>
+                <button class="theme-btn" data-theme="brand">Brand</button>
+            </div>
+            <button class="download-btn" id="downloadZip">📥 Download ZIP</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <input type="text" class="sidebar-search" placeholder="Buscar...">
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-section="logo">
+                    <span class="icon">🎯</span> Logo
+                </button>
+                <button class="nav-item" data-section="typography">
+                    <span class="icon">✍️</span> Tipografia
+                </button>
+                <button class="nav-item" data-section="colors">
+                    <span class="icon">🎨</span> Paleta
+                </button>
+                <button class="nav-item" data-section="components">
+                    <span class="icon">⚙️</span> Componentes
+                </button>
+                <button class="nav-item" data-section="icons">
+                    <span class="icon">⭐</span> Ícones
+                </button>
+                <button class="nav-item" data-section="photography">
+                    <span class="icon">📸</span> Fotografia
+                </button>
+                <button class="nav-item" data-section="applications">
+                    <span class="icon">📱</span> Aplicações
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" id="sectionsContainer"></main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Atualizado em <span id="updatedDate">—</span></p>
+        <p>Apresentação by <strong>Caio Creator</strong></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
