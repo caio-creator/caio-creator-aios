@@ -1,0 +1,68 @@
+brand:
+  name: "Brand Name"
+  slug: "brand-slug"
+  tagline: "Brand tagline"
+  updated_at: "2026-03-01"
+
+logo:
+  primary: "assets/logo-primary.svg"
+  variations:
+    - name: "Horizontal"
+      file: "assets/logo-horizontal.svg"
+    - name: "Vertical"
+      file: "assets/logo-vertical.svg"
+    - name: "Isolated"
+      file: "assets/logo-isolated.svg"
+
+typography:
+  primary:
+    name: "Inter"
+    weights: [400, 500, 600, 700]
+    sizes: [12, 14, 16, 18, 24, 32, 48]
+  secondary:
+    name: "Playfair Display"
+    weights: [400, 700]
+
+colors:
+  primary:
+    - name: "Primary Color"
+      hex: "#4A9B8E"
+      rgb: "74, 155, 142"
+  secondary:
+    - name: "Secondary Color"
+      hex: "#E8A89E"
+      rgb: "232, 168, 158"
+  neutral:
+    - name: "Light Background"
+      hex: "#F5F1ED"
+      rgb: "245, 241, 237"
+
+components:
+  buttons:
+    - name: "Primary Button"
+      html: "<button class='btn-primary'>Click</button>"
+      css: ".btn-primary { padding: 10px 20px; }"
+  cards:
+    - name: "Card"
+      html: "<div class='card'>Content</div>"
+      css: ".card { padding: 20px; }"
+  badges:
+    - name: "Badge"
+      html: "<span class='badge'>Label</span>"
+      css: ".badge { padding: 4px 8px; }"
+
+icons:
+  file: "assets/icons.svg"
+  count: 12
+
+photography:
+  mood_images:
+    - "assets/photo-1.jpg"
+    - "assets/photo-2.jpg"
+  guidelines: "Warm, humanized, approachable style"
+
+applications:
+  - name: "Email Signature"
+    image: "assets/mockup-email.png"
+  - name: "Social Media"
+    image: "assets/mockup-social.png"

@@ -1479,6 +1479,106 @@ section.active {
 }
 
 /* =============================================================================
+   MOBILE OPTIMIZATION (Task 16) — Additional mobile refinements
+   ============================================================================= */
+
+@media (max-width: 640px) {
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .header-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header-title {
+        font-size: 18px;
+    }
+
+    .theme-toggle {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .theme-btn {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .download-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+        position: static;
+        padding: 12px;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 8px;
+    }
+
+    .nav-item {
+        padding: 8px 12px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .main-content {
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+    }
+
+    .colors-grid,
+    .logo-variations,
+    .icons-grid,
+    .mood-images,
+    .applications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .component-preview,
+    .size-item {
+        padding: 8px;
+    }
+
+    .typography-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sizes-list {
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+
+    .footer {
+        padding: 16px;
+        font-size: 11px;
+    }
+}
+
+/* =============================================================================
    ACCESSIBILITY IMPROVEMENTS
    ============================================================================= */
 

@@ -1,6 +1,46 @@
 // Global config holder
 let currentConfig = null;
 
+// Task 12: Generate ZIP download with brand assets
+async function generateZipDownload() {
+    const zip = new JSZip();
+
+    // Add logo files
+    if (currentConfig.logo?.variations) {
+        for (const variant of currentConfig.logo.variations) {
+            try {
+                const response = await fetch(variant.file);
+                const blob = await response.blob();
+                zip.folder('logos').file(variant.file.split('/').pop(), blob);
+            } catch (error) {
+                console.error(`Failed to add ${variant.file}:`, error);
+            }
+        }
+    }
+
+    // Add color swatches as JSON
+    if (currentConfig.colors) {
+        zip.file('colors.json', JSON.stringify(currentConfig.colors, null, 2));
+    }
+
+    // Add typography specs
+    if (currentConfig.typography) {
+        zip.file('typography.json', JSON.stringify(currentConfig.typography, null, 2));
+    }
+
+    // Add config for reference
+    zip.file('config.json', JSON.stringify(currentConfig, null, 2));
+
+    // Generate and download
+    const content = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(content);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${currentConfig.brand.slug || 'brand'}-kit-${new Date().toISOString().split('T')[0]}.zip`;
+    link.click();
+    URL.revokeObjectURL(url);
+}
+
 // Load and render brand data
 async function loadConfig() {
     try {
@@ -34,6 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Setup event listeners
 function setupEventListeners() {
+    // ZIP download button
+    document.getElementById('downloadZip')?.addEventListener('click', generateZipDownload);
+
     // Section navigation
     document.querySelectorAll('.nav-item').forEach(btn => {
         btn.addEventListener('click', () => {
