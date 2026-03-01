@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="200" height="300">
+  <!-- Background and styling -->
+  <defs>
+    <style>
+      .logo-mark { fill: #A8D5D1; }
+      .logo-text { font-family: 'Cormorant Garamond', serif; fill: #3D3D3D; }
+      .logo-accent { fill: #5C8F8A; }
+      .logo-subtitle { font-family: 'DM Sans', sans-serif; fill: #3D3D3D; }
+    </style>
+  </defs>
+
+  <!-- Top: Mark -->
+  <circle cx="100" cy="60" r="45" class="logo-mark" opacity="0.2"/>
+  <circle cx="100" cy="60" r="40" fill="none" stroke="#A8D5D1" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 80 70 Q 100 50, 120 70" fill="none" stroke="#5C8F8A" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="100" cy="60" r="3" class="logo-accent"/>
+
+  <!-- Divider -->
+  <line x1="50" y1="130" x2="150" y2="130" stroke="#A8D5D1" stroke-width="1" opacity="0.4"/>
+
+  <!-- Bottom: Vertical layout text -->
+  <text x="100" y="170" font-size="26" font-weight="300" class="logo-text" text-anchor="middle">Dra. Patrícia</text>
+  <text x="100" y="200" font-size="26" font-weight="300" class="logo-text" text-anchor="middle">Luz</text>
+  <text x="100" y="245" font-size="10" class="logo-subtitle" text-anchor="middle" opacity="0.8">Cirurgiã-dentista</text>
+  <text x="100" y="260" font-size="10" class="logo-subtitle" text-anchor="middle" opacity="0.8">CRO 157579</text>
+</svg>

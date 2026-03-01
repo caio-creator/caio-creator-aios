@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Logo mark isolated — icon only -->
+  <defs>
+    <style>
+      .logo-mark { fill: #A8D5D1; }
+      .logo-accent { fill: #5C8F8A; }
+    </style>
+  </defs>
+
+  <!-- Outer circle with border -->
+  <circle cx="60" cy="60" r="55" class="logo-mark" opacity="0.15"/>
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#A8D5D1" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Inner circle -->
+  <circle cx="60" cy="60" r="48" class="logo-mark" opacity="0.08"/>
+
+  <!-- Curved line: care and gentleness -->
+  <path d="M 35 70 Q 60 45, 85 70" fill="none" stroke="#5C8F8A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Center accent point -->
+  <circle cx="60" cy="60" r="4" class="logo-accent"/>
+
+  <!-- Small decorative elements (subtle humanization) -->
+  <circle cx="45" cy="45" r="1.5" class="logo-accent" opacity="0.6"/>
+  <circle cx="75" cy="45" r="1.5" class="logo-accent" opacity="0.6"/>
+</svg>

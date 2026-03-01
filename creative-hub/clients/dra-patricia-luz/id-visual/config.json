@@ -1,0 +1,354 @@
+{
+  "brand": {
+    "name": "Dra. Patrícia Luz",
+    "slug": "dra-patricia-luz",
+    "tagline": "Cuidado, prevenção e bem-estar em cada sorriso",
+    "positioning": "A cirurgiã-dentista que une excelência técnica e cuidado genuíno para pessoas que merecem mais do que um procedimento",
+    "updated_at": "2026-03-01"
+  },
+  "logo": {
+    "primary": "assets/logos/logo-primary.svg",
+    "guidelines": "Logo tipográfico ou com símbolo abstrato elegante. Sem escovas, dentes inteiros ou instrumentos odontológicos.",
+    "variations": [
+      {
+        "name": "Horizontal",
+        "file": "assets/logos/logo-horizontal.svg",
+        "usage": "Assinaturas de email, materiais digitais, cabeçalhos"
+      },
+      {
+        "name": "Vertical",
+        "file": "assets/logos/logo-vertical.svg",
+        "usage": "Cartões, papelaria impressa, redes sociais"
+      },
+      {
+        "name": "Isolado",
+        "file": "assets/logos/logo-isolated.svg",
+        "usage": "Favicon, watermark, ícone de aplicações"
+      }
+    ]
+  },
+  "typography": {
+    "primary": {
+      "name": "Cormorant Garamond",
+      "weights": [
+        300,
+        400,
+        600
+      ],
+      "sizes": [
+        28,
+        32,
+        36,
+        48
+      ],
+      "usage": "Nome da marca, titulares, destaques, elegância",
+      "source": "Google Fonts"
+    },
+    "secondary": {
+      "name": "DM Sans",
+      "weights": [
+        400,
+        500,
+        300
+      ],
+      "sizes": [
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "usage": "Corpo de texto, legendas, subtítulos, clareza",
+      "source": "Google Fonts"
+    },
+    "hierarchy": [
+      {
+        "name": "Nome da marca",
+        "font": "Cormorant Garamond",
+        "weight": 300,
+        "size": 48,
+        "usage": "Logo, capa, papelaria de destaque"
+      },
+      {
+        "name": "Titular",
+        "font": "Cormorant Garamond",
+        "weight": 600,
+        "size": 36,
+        "usage": "Títulos de post, seções principais"
+      },
+      {
+        "name": "Subtítulo",
+        "font": "DM Sans",
+        "weight": 500,
+        "size": 20,
+        "usage": "Subtítulos, rótulos, destaques secundários"
+      },
+      {
+        "name": "Corpo",
+        "font": "DM Sans",
+        "weight": 400,
+        "size": 16,
+        "usage": "Texto corrido, descrições, legendas"
+      },
+      {
+        "name": "Caption",
+        "font": "DM Sans",
+        "weight": 300,
+        "size": 12,
+        "usage": "Informações de rodapé, dados formais, CRO"
+      }
+    ]
+  },
+  "colors": {
+    "primary": [
+      {
+        "name": "Aqua Luz",
+        "hex": "#A8D5D1",
+        "rgb": "168, 213, 209",
+        "usage": "Cor de marca — acento principal, elementos de destaque, ícones, bordas, CTAs",
+        "semantic": "primary"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Nude Confiança",
+        "hex": "#D4B5A0",
+        "rgb": "212, 181, 160",
+        "usage": "Cor de apoio — warmth, humanização, elementos de cuidado",
+        "semantic": "secondary"
+      },
+      {
+        "name": "Verde Profundo",
+        "hex": "#5C8F8A",
+        "rgb": "92, 143, 138",
+        "usage": "Versão escura do Aqua Luz — textos coloridos, versão mais formal, destaque",
+        "semantic": "tertiary"
+      }
+    ],
+    "neutral": [
+      {
+        "name": "Branco Nuvem",
+        "hex": "#F9F7F5",
+        "rgb": "249, 247, 245",
+        "usage": "Fundo principal — levemente warm, nunca frio",
+        "semantic": "background-primary"
+      },
+      {
+        "name": "Bege Elegante",
+        "hex": "#EDE5DC",
+        "rgb": "237, 229, 220",
+        "usage": "Fundo secundário, cartões, elementos de fundo em composições",
+        "semantic": "background-secondary"
+      },
+      {
+        "name": "Carvão Suave",
+        "hex": "#3D3D3D",
+        "rgb": "61, 61, 61",
+        "usage": "Texto principal, titulares — nunca preto puro",
+        "semantic": "text-primary"
+      },
+      {
+        "name": "Cinza Névoa",
+        "hex": "#B8B5B2",
+        "rgb": "184, 181, 178",
+        "usage": "Texto secundário, ícones inativos, separadores",
+        "semantic": "text-secondary"
+      }
+    ]
+  },
+  "color_combinations": {
+    "primary": {
+      "background": "#F9F7F5",
+      "text": "#3D3D3D",
+      "accent": "#A8D5D1",
+      "usage": "Combinação principal para todos os materiais"
+    },
+    "highlight": {
+      "background": "#5C8F8A",
+      "text": "#F9F7F5",
+      "accent": "#D4B5A0",
+      "usage": "Combinação de destaque para capas, versos, materiais especiais"
+    }
+  },
+  "components": {
+    "buttons": [
+      {
+        "name": "Primary Button — Agendar Consulta",
+        "html": "<button style='padding: 12px 28px; background-color: #A8D5D1; color: #3D3D3D; border: none; border-radius: 6px; font-weight: 600; font-family: DM Sans; cursor: pointer; transition: background-color 0.3s;'>Agendar Consulta</button>",
+        "css": ".btn-primary { padding: 12px 28px; background-color: #A8D5D1; color: #3D3D3D; border: none; border-radius: 6px; font-weight: 600; font-family: 'DM Sans', sans-serif; cursor: pointer; transition: background-color 0.3s; } .btn-primary:hover { background-color: #5C8F8A; color: #F9F7F5; }",
+        "usage": "CTAs principais em website, email, materiais digitais"
+      },
+      {
+        "name": "Secondary Button — Saiba Mais",
+        "html": "<button style='padding: 12px 28px; border: 2px solid #A8D5D1; color: #5C8F8A; background: white; border-radius: 6px; font-weight: 600; font-family: DM Sans; cursor: pointer;'>Saiba Mais</button>",
+        "css": ".btn-secondary { padding: 12px 28px; border: 2px solid #A8D5D1; color: #5C8F8A; background: white; border-radius: 6px; font-weight: 600; font-family: 'DM Sans', sans-serif; cursor: pointer; }",
+        "usage": "CTAs secundários, links de ação alternativa"
+      }
+    ],
+    "cards": [
+      {
+        "name": "Service Card",
+        "html": "<div style='padding: 24px; background: white; border: 1px solid #E5E5E5; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);'><h3 style='font-family: Cormorant Garamond; color: #3D3D3D; margin-bottom: 12px;'>Limpeza e Profilaxia</h3><p style='font-family: DM Sans; color: #666; font-size: 14px; line-height: 1.6;'>Mantendo seus dentes saudáveis com cuidado humanizado</p></div>",
+        "css": ".card { padding: 24px; background: white; border: 1px solid #E5E5E5; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: box-shadow 0.3s; } .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); }",
+        "usage": "Apresentação de serviços, conteúdo em grid"
+      }
+    ],
+    "badges": [
+      {
+        "name": "Humanizado",
+        "html": "<span style='padding: 8px 14px; background: #A8D5D1; color: #3D3D3D; border-radius: 20px; font-size: 12px; font-weight: 600; font-family: DM Sans; display: inline-block;'>✓ Atendimento Humanizado</span>",
+        "css": ".badge { padding: 8px 14px; background: #A8D5D1; color: #3D3D3D; border-radius: 20px; font-size: 12px; font-weight: 600; font-family: 'DM Sans', sans-serif; }",
+        "usage": "Destaque de valores, qualidades da marca"
+      },
+      {
+        "name": "Disponibilidade",
+        "html": "<span style='padding: 8px 14px; background: #D4B5A0; color: white; border-radius: 20px; font-size: 12px; font-weight: 600; font-family: DM Sans; display: inline-block;'>✓ Atende Sábados 8h-18h</span>",
+        "css": ".badge-availability { padding: 8px 14px; background: #D4B5A0; color: white; border-radius: 20px; font-size: 12px; font-weight: 600; }",
+        "usage": "Diferencial competitivo"
+      }
+    ]
+  },
+  "icons": {
+    "file": "assets/icons.svg",
+    "count": 12,
+    "descriptions": [
+      "Consulta / Agenda",
+      "Educação / Prevenção",
+      "Cuidado / Humanização",
+      "Sorriso / Confiança",
+      "Telefone / Contato",
+      "Local / Consultório",
+      "Certificação / Credibilidade",
+      "Coração / Empatia",
+      "Segurança / Confiança",
+      "Tempo / Disponibilidade",
+      "Qualidade / Excelência",
+      "Comunicação / Clareza"
+    ]
+  },
+  "photography": {
+    "aesthetic": "Real e Luminoso — Natural, quente-neutra, sem filtros frios ou artificiais",
+    "mood_guidelines": "Paleta de luz: Natural, quente-neutra. Sem filtros frios ou azulados (hospitalar).\nSem excesso de flash. Lumínica, como um consultório bem iluminado por janela.\n",
+    "yes_include": [
+      {
+        "name": "Dra. Patrícia",
+        "description": "Sorrindo naturalmente, em contato visual, expressão de presença — não pose clínica"
+      },
+      {
+        "name": "Ambiente",
+        "description": "Consultório limpo, luminoso, detalhes de organização e cuidado — não estéril"
+      },
+      {
+        "name": "Mãos",
+        "description": "Delicadas, cuidadosas — gesticulando, apontando, orientando"
+      },
+      {
+        "name": "Materiais",
+        "description": "Produtos de qualidade em contexto — não exposição técnica de instrumentos"
+      },
+      {
+        "name": "Texturas",
+        "description": "Linho, cerâmica, verde suave, branco warm — evocam cuidado e bem-estar"
+      }
+    ],
+    "avoid_include": [
+      "Boca aberta em primeiro plano com instrumentos visíveis",
+      "Fotos com luz fria/azulada (estilo hospital)",
+      "Sorrisos exageradamente perfeitos/artificiais",
+      "Dentista com máscara e luvas em pose",
+      "Fundos brancos puros em fotos de ambiente"
+    ],
+    "mood_images": [
+      "assets/photography/photo-1.jpg",
+      "assets/photography/photo-2.jpg"
+    ]
+  },
+  "applications": [
+    {
+      "name": "Assinatura de E-mail",
+      "file": "assets/mockups/email-signature.png",
+      "specs": "HTML compatível com Gmail, 600px largura. Logo + nome + CRO + contatos + link Instagram"
+    },
+    {
+      "name": "Cartão de Visita Digital",
+      "file": "assets/mockups/digital-card.png",
+      "specs": "1080x1080 ou VCard. Nome, foto, contatos, QR code do Instagram"
+    },
+    {
+      "name": "Banner Instagram",
+      "file": "assets/mockups/instagram-banner.png",
+      "specs": "1080x1350 (feed) ou 1080x1920 (stories)"
+    },
+    {
+      "name": "Cartão de Visita Impresso",
+      "file": "assets/mockups/business-card.png",
+      "specs": "9x5cm padrão, frente e verso. Frente: nome + contatos + CRO. Verso: cor de destaque"
+    },
+    {
+      "name": "Papel Timbrado",
+      "file": "assets/mockups/letterhead.png",
+      "specs": "A4, identidade no cabeçalho e rodapé"
+    },
+    {
+      "name": "Wallpaper",
+      "file": "assets/mockups/wallpaper.png",
+      "specs": "1080x1920 (Stories/celular). Marca elegante no fundo"
+    }
+  ],
+  "brand_personality": {
+    "descriptor": "Se fosse uma pessoa...",
+    "personality": "Acolhedora, segura de si, ética, paciente, presente",
+    "style": "Elegante sem ostentação — limpo, cuidado, confortável",
+    "communication": "Com clareza, calma e atenção genuína — explica sem simplificar demais",
+    "values": [
+      "Humanização",
+      "Ética",
+      "Excelência Técnica",
+      "Educação em Saúde",
+      "Presença e Disponibilidade"
+    ]
+  },
+  "messaging": {
+    "central": "Cuidado real — técnico e humano — para quem merece ser tratado como pessoa",
+    "supporting": [
+      "Prevenção antes de tratamento",
+      "Disponível quando você precisa — inclusive sábados (8h-18h)",
+      "Vai além do sorriso — saúde bucal conectada ao bem-estar",
+      "Ética e transparência em cada decisão"
+    ]
+  },
+  "contact": {
+    "email": "drapatricialuz@gmail.com",
+    "phone": "55 11 94108-5051",
+    "cro": "157579",
+    "instagram": "@patricialuz.odonto"
+  },
+  "design_references": {
+    "primary": [
+      {
+        "name": "Tiffany & Co.",
+        "absorb": "Elegância reconhecível por um detalhe sutil. Verde-água icônico. Branco como base. Tipografia delicada."
+      },
+      {
+        "name": "Disney",
+        "absorb": "Calor emocional nos elementos. A curva, não o ângulo. A forma que abraça. Detalhe que encanta."
+      },
+      {
+        "name": "Calvin Klein",
+        "absorb": "Minimalismo intencional. Tipografia que respira. Espaço em branco como elemento de marca."
+      }
+    ],
+    "complementary": [
+      "Marcas de skincare premium (La Mer, Aesop, Cetaphil premium)",
+      "Clínicas de bem-estar de alto padrão",
+      "Tipografias de moda feminina contemporânea"
+    ]
+  },
+  "creation_context": {
+    "created_at": "2026-03-01",
+    "created_by": "Claude Code — Synkra AIOS",
+    "purpose": "Showcase example for ID Visual Template",
+    "client_briefing_date": "2026-02-19",
+    "visual_phase_completed": "2026-02-20"
+  }
+}

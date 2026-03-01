@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <!-- Background and styling -->
+  <defs>
+    <style>
+      .logo-mark { fill: #A8D5D1; }
+      .logo-text { font-family: 'Cormorant Garamond', serif; fill: #3D3D3D; }
+      .logo-accent { fill: #5C8F8A; }
+      .logo-subtitle { font-family: 'DM Sans', sans-serif; fill: #3D3D3D; }
+    </style>
+  </defs>
+
+  <!-- Left: Mark -->
+  <circle cx="40" cy="50" r="35" class="logo-mark" opacity="0.2"/>
+  <circle cx="40" cy="50" r="32" fill="none" stroke="#A8D5D1" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 20 55 Q 40 35, 60 55" fill="none" stroke="#5C8F8A" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="40" cy="50" r="2.5" class="logo-accent"/>
+
+  <!-- Right: Horizontal layout text -->
+  <text x="100" y="60" font-size="28" font-weight="300" class="logo-text">Dra. Patrícia Luz</text>
+  <line x1="100" y1="70" x2="380" y2="70" stroke="#A8D5D1" stroke-width="1" opacity="0.4"/>
+  <text x="100" y="88" font-size="11" class="logo-subtitle" opacity="0.8">Cuidado, prevenção e bem-estar em cada sorriso</text>
+</svg>
