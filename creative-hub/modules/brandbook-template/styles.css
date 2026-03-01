@@ -127,6 +127,15 @@ a {
   text-decoration: none;
 }
 
+/* WCAG AA: Focus Visible for Keyboard Navigation */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 h1,
 h2,
 h3,
@@ -231,6 +240,11 @@ body {
   color: var(--brand-primary);
   border-left-color: var(--brand-primary);
   background: rgba(var(--brand-primary-rgb, 99, 102, 241), 0.06);
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: -2px;
 }
 
 .sidebar-footer {
@@ -757,6 +771,12 @@ section {
 .color-swatch:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.color-swatch:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+  transform: translateY(-2px);
 }
 
 .color-swatch .swatch-preview {

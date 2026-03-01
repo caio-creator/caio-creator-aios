@@ -382,6 +382,9 @@ function renderColors() {
 
       var swatch = document.createElement('div');
       swatch.className = 'color-swatch';
+      swatch.setAttribute('tabindex', '0');
+      swatch.setAttribute('role', 'button');
+      swatch.setAttribute('aria-label', 'Copy color ' + (color.name || color.hex || 'color'));
 
       var preview = document.createElement('div');
       preview.className = 'swatch-preview';
@@ -409,10 +412,16 @@ function renderColors() {
       swatch.appendChild(preview);
       swatch.appendChild(info);
 
-      // Click to copy — use closure to capture hex value
+      // Click/Enter to copy — use closure to capture hex value
       (function(hexValue) {
         swatch.addEventListener('click', function() {
           copyToClipboard(hexValue);
+        });
+        swatch.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            copyToClipboard(hexValue);
+          }
         });
       })(color.hex || '');
 
@@ -878,6 +887,8 @@ function showCopyToast(text) {
   if (!toast) {
     toast = document.createElement('div');
     toast.className = 'copy-toast';
+    toast.setAttribute('aria-live', 'polite');
+    toast.setAttribute('aria-atomic', 'true');
     document.body.appendChild(toast);
   }
 
@@ -906,10 +917,12 @@ function setupScrollSpy() {
       if (entry.isIntersecting) {
         for (var j = 0; j < navLinks.length; j++) {
           navLinks[j].classList.remove('active');
+          navLinks[j].removeAttribute('aria-current');
         }
         var activeLink = document.querySelector('.nav-link[data-section="' + entry.target.id + '"]');
         if (activeLink) {
           activeLink.classList.add('active');
+          activeLink.setAttribute('aria-current', 'page');
         }
       }
     }
