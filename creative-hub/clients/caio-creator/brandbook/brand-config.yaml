@@ -1,0 +1,233 @@
+brand:
+  name: Caio Creator
+  tagline: Conteúdo com critério. Design com propósito.
+  logo: assets/logos/logo-primary.svg
+  year: 2026
+  updated_at: "2026-03-01"
+
+manifesto:
+  title: Criatividade Intencional
+  text: |
+    Cada projeto é uma oportunidade de criar algo que realmente importa. Não produzimos conteúdo por produzir — construímos narrativas que conectam ideias, pessoas e marcas.
+
+    Acreditamos que bom design não é decoração. É comunicação clara, intencional, feita com conhecimento profundo do que você é e do que você quer dizer.
+
+    Combinamos estratégia com sensibilidade estética. Números com humanidade. Precisão técnica com criatividade sem limites. Porque marcas fortes nascem da convicção de que cada detalhe importa.
+
+values:
+  - icon: 🎯
+    title: Intencionalidade
+    description: Toda decisão tem propósito. Não fazemos por fazer — fazemos porque faz sentido para sua marca.
+
+  - icon: 🔍
+    title: Visão Crítica
+    description: Questionamos o óbvio. Analisamos tendências para desconstruir o que não funciona e reconhecer o que realmente importa.
+
+  - icon: 🤝
+    title: Parceria Autêntica
+    description: Você não é um projeto. É um parceiro. Ouvimos, colaboramos, iteramos juntos até acertar.
+
+  - icon: ⚡
+    title: Excelência em Execução
+    description: Estratégia brilhante sem execução é apenas um sonho. Entregamos design de qualidade, testado e otimizado.
+
+voice:
+  we_are:
+    - Diretos e honestos
+    - Acessíveis mas não informais demais
+    - Estratégicos com sensibilidade criativa
+    - Técnicos mas humanizados
+    - Confiantes em nossas convicções
+
+  we_are_not:
+    - Corporativos ou sem personalidade
+    - Designers que só fazem bonito
+    - Agência impessoal ou desengajada
+    - Apegados ao que funciona no passado
+    - Céticos da importância do design
+
+  examples:
+    - context: "Comunicação com clientes"
+      text: "Explicamos decisões com clareza. Usamos exemplos reais, mostramos alternativas, educamos. Assumimos que você quer entender, não só aceitar."
+
+    - context: "Redes sociais"
+      text: "Direto ao ponto com personalidade. Compartilhamos insights, learnings e processos. Somos transparentes sobre o que funciona e o que não."
+
+    - context: "Apresentações e pitches"
+      text: "Dados encontram storytelling. Mostramos o caminho (discovery, research, decisions) não só o resultado. Você entende por que chegamos lá."
+
+logo:
+  primary: assets/logos/logo-primary.svg
+
+  variations:
+    - name: Horizontal
+      src: assets/logos/logo-horizontal.svg
+
+    - name: Vertical
+      src: assets/logos/logo-vertical.svg
+
+    - name: Ícone
+      src: assets/logos/logo-icon.svg
+
+    - name: Monocromática
+      src: assets/logos/logo-mono.svg
+
+  restrictions:
+    - type: do
+      text: Sempre mantenha espaço de respiro (padding mínimo de 20px)
+
+    - type: do
+      text: Use em fundos com contraste suficiente para legibilidade
+
+    - type: do
+      text: Prefira versão horizontal para websites e apresentações
+
+    - type: dont
+      text: Não distorça, rotacione ou aplique efeitos à logo
+
+    - type: dont
+      text: Não use versões antigas ou desatualizadas
+
+    - type: dont
+      text: Não coloque sobre fundos complexos sem contraste
+
+colors:
+  primary:
+    - name: "Criação Azul"
+      hex: "#2563EB"
+      rgb: "37, 99, 235"
+      description: "Cor principal. Transmite confiança, conhecimento, inovação."
+
+    - name: "Criação Escuro"
+      hex: "#1E40AF"
+      rgb: "30, 64, 175"
+      description: "Variação mais escura para destaque e profundidade."
+
+  secondary:
+    - name: "Energia Laranja"
+      hex: "#F97316"
+      rgb: "249, 115, 22"
+      description: "Cor de destaque. Energia, criatividade, movimento."
+
+    - name: "Energia Claro"
+      hex: "#FED7AA"
+      rgb: "254, 215, 170"
+      description: "Laranja claro para backgrounds e destaques suaves."
+
+  neutral:
+    - name: "Preto Profundo"
+      hex: "#0A0A0B"
+      rgb: "10, 10, 11"
+      description: "Fundo primário e textos pesados."
+
+    - name: "Cinza Escuro"
+      hex: "#27272A"
+      rgb: "39, 39, 42"
+      description: "Cards, seções, elementos secundários."
+
+    - name: "Cinza Médio"
+      hex: "#71717A"
+      rgb: "113, 113, 122"
+      description: "Textos secundários, labels, descrições."
+
+    - name: "Branco Puro"
+      hex: "#FAFAFA"
+      rgb: "250, 250, 250"
+      description: "Textos principais, títulos em fundo escuro."
+
+typography:
+  - family: "Inter"
+    role: "Headline"
+    description: "Tipografia principal para títulos e destaques. Geométrica, moderna, legível."
+    weights: [600, 700, 900]
+    sizes: [64, 48, 36, 28, 24, 20]
+
+  - family: "Inter"
+    role: "Body"
+    description: "Tipografia secundária para textos corridos. Extremamente legível em qualquer tamanho."
+    weights: [400, 500, 600]
+    sizes: [18, 16, 14, 13, 12]
+
+patterns:
+  - name: "Padrão Principal"
+    description: "Padrão geométrico para fundos. Usa a paleta primária com opacity."
+    src: assets/patterns/pattern-geometric.svg
+
+  - name: "Textura Sutil"
+    description: "Textura noise para adicionar profundidade. Aplique com blend mode multiply."
+    src: assets/patterns/texture-subtle.svg
+
+photography:
+  guidelines: |
+    O estilo fotográfico de Caio Creator prioriza autenticidade, intencionalidade e conexão.
+
+    **Características:**
+    - Iluminação natural sempre que possível
+    - Composições limpas, sem clutter visual
+    - Pessoas e momentos reais, não poses artificiais
+    - Cores alinhadas com a paleta (especialmente azul e laranja em tones naturais)
+    - Contrast e depth — elementos bem definidos
+
+    **Evitar:**
+    - Fotos genéricas de banco de imagens
+    - Tons desaturados ou efeitos vintage
+    - Composições muito ocupadas
+    - Materiais corporativos típicos
+
+    **Preferir:**
+    - Registros autênticos de trabalho e processo
+    - Detalhes (mãos, workspace, textos)
+    - Momentos de colaboração e criação
+    - Texturas e materiais reais
+
+  mood:
+    - src: assets/photography/mood-creative-01.jpg
+      alt: "Workspace criativo com design tools"
+
+    - src: assets/photography/mood-creative-02.jpg
+      alt: "Hands working on design sketches"
+
+applications:
+  - name: "Business Card"
+    description: "Layout vertical. Logo à esquerda, informações à direita. Fundo azul escuro."
+    src: assets/mockups/businesscard.png
+
+  - name: "Email Signature"
+    description: "Horizontal. Logo small (40px), nome em headline, informações em body."
+    src: assets/mockups/email-signature.png
+
+  - name: "Instagram Post"
+    description: "Square 1080x1080. Logo em corner, espaço para conteúdo, call-to-action em footer."
+    src: assets/mockups/instagram-post.png
+
+  - name: "Website Header"
+    description: "Logo left, navigation right. Minimal, clean. Fundo branco ou escuro."
+    src: assets/mockups/website-header.png
+
+  - name: "Apresentação"
+    description: "Slide title: Logo top-left, título grande, fundo azul. Slide content: fundo branco/claro."
+    src: assets/mockups/presentation-slide.png
+
+summary:
+  headline: "Essência da Marca"
+  items:
+    - label: "Cor Primária"
+      value: "#2563EB"
+
+    - label: "Cor Secundária"
+      value: "#F97316"
+
+    - label: "Tipografia Headline"
+      value: "Inter Bold / Extra Bold"
+
+    - label: "Tipografia Body"
+      value: "Inter Regular / Medium"
+
+    - label: "Tom de Voz"
+      value: "Direto, autêntico, estratégico"
+
+    - label: "Conceito"
+      value: "Criatividade Intencional"
+
+    - label: "Ano"
+      value: "2026"
