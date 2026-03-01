@@ -102,3 +102,35 @@ function renderComponentsSection(container) { }
 function renderIconsSection(container) { }
 function renderPhotographySection(container) { }
 function renderApplicationsSection(container) { }
+
+// Copy text to clipboard with visual feedback
+async function copyToClipboard(text, button = null) {
+    try {
+        await navigator.clipboard.writeText(text);
+
+        if (button) {
+            const originalText = button.textContent;
+            button.textContent = '✓ Copiado!';
+            button.disabled = true;
+
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.disabled = false;
+            }, 2000);
+        }
+
+        return true;
+    } catch (error) {
+        console.error('Copy failed:', error);
+        return false;
+    }
+}
+
+// Create a copy button element
+function createCopyButton(text, label = 'Copy') {
+    const btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.textContent = label;
+    btn.addEventListener('click', () => copyToClipboard(text, btn));
+    return btn;
+}

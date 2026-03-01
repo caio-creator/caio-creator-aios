@@ -690,6 +690,32 @@ section.active {
 }
 
 /* =============================================================================
+   COPY BUTTON STYLES
+   ============================================================================= */
+
+.copy-btn {
+    padding: 6px 12px;
+    border: 1px solid var(--color-accent-primary);
+    background-color: transparent;
+    color: var(--color-accent-primary);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.copy-btn:hover {
+    background-color: var(--color-accent-primary);
+    color: white;
+}
+
+.copy-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* =============================================================================
    FOOTER STYLES
    ============================================================================= */
 
