@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIOS Design System — Saturn Theme</title>
+    <meta name="description"
+        content="The official Design System and UI Kit for the AIOS Framework by Caio Creator. Saturn Theme featuring Space Grotesk, Plus Jakarta Sans, and a premium gold-obsidian palette." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <style>
+        /* ===== SATURN DESIGN TOKENS ===== */
+        :root {
+            --gold-50: #fdf8ee;
+            --gold-100: #f9eece;
+            --gold-200: #f2d99b;
+            --gold-300: #e8c06a;
+            --gold-400: #C5AB6E;
+            --gold-500: #b8975a;
+            --gold-600: #9a7a42;
+            --gold-700: #7a5e31;
+            --gold-800: #5e4622;
+            --gold-900: #3d2d14;
+
+            --copper-400: #C3A171;
+            --earth-400: #8B7355;
+
+            --slate-950: #0D1117;
+            --slate-900: #161B22;
+            --slate-800: #21262D;
+            --slate-700: #30363D;
+            --slate-600: #484F58;
+
+            --warm-white: #EDE9DD;
+            --warm-muted: #9B9284;
+
+            --success: #4CAF78;
+            --warning: #D4A843;
+            --error: #E05252;
+            --info: #6B9FD4;
+
+            --font-heading: 'Space Grotesk', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+
+            --radius: 0.75rem;
+            --radius-sm: 0.5rem;
+            --radius-lg: 1rem;
+
+            --shadow-gold: 0 0 20px rgba(197, 171, 110, 0.15), 0 0 40px rgba(197, 171, 110, 0.08);
+            --shadow-gold-lg: 0 0 40px rgba(197, 171, 110, 0.25), 0 0 80px rgba(197, 171, 110, 0.12);
+        }
+
+        /* ===== BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--slate-950);
+            color: var(--warm-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        section+section {
+            border-top: 1px solid var(--slate-700);
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.125rem;
+        }
+
+        code,
+        pre {
+            font-family: var(--font-mono);
+        }
+
+        /* ===== GRADIENT TEXT ===== */
+        .gradient-text {
+            background: linear-gradient(135deg, var(--gold-400) 0%, var(--copper-400) 50%, var(--earth-400) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ===== TOPBAR ===== */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(13, 17, 23, 0.8);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--slate-700);
+            padding: 1rem 0;
+        }
+
+        nav .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .nav-logo {
+            font-family: var(--font-heading);
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--warm-white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-logo span {
+            color: var(--gold-400);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--warm-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold-400);
+        }
+
+        .nav-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            border: 1px solid var(--gold-400);
+            color: var(--gold-400);
+            font-size: 0.75rem;
+            font-weight: 600;
+            font-family: var(--font-mono);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            padding: 6rem 0 5rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(197, 171, 110, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 1rem;
+            border-radius: 999px;
+            border: 1px solid rgba(197, 171, 110, 0.3);
+            background: rgba(197, 171, 110, 0.05);
+            color: var(--gold-400);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        .hero-tag .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--gold-400);
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(0.85);
+            }
+        }
+
+        .hero h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--warm-muted);
+            max-width: 620px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+            transition: all 0.2s;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold-400), var(--gold-500));
+            color: var(--slate-950);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-gold-lg);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--warm-white);
+            border: 1px solid var(--slate-600);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--gold-400);
+            color: var(--gold-400);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--warm-muted);
+        }
+
+        .btn-ghost:hover {
+            color: var(--warm-white);
+        }
+
+        /* ===== SECTION HEADER ===== */
+        .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold-400);
+            font-family: var(--font-mono);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-header h2 {
+            margin-bottom: 0.75rem;
+        }
+
+        .section-header p {
+            color: var(--warm-muted);
+            max-width: 520px;
+        }
+
+        /* ===== CARDS ===== */
+        .card {
+            background: var(--slate-900);
+            border: 1px solid var(--slate-700);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: rgba(197, 171, 110, 0.4);
+        }
+
+        .card-glass {
+            background: rgba(22, 27, 34, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(197, 171, 110, 0.15);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            transition: all 0.3s;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-glass:hover {
+            border-color: rgba(197, 171, 110, 0.4);
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* ===== GRIDS ===== */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        @media (max-width: 900px) {
+
+            .grid-3,
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .grid-2,
+            .grid-3,
+            .grid-4 {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2.25rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+        }
+
+        /* ===== COLORS ===== */
+        .color-swatch {
+            height: 80px;
+            border-radius: var(--radius);
+            margin-bottom: 0.75rem;
+            position: relative;
+        }
+
+        .color-meta {
+            font-size: 0.8rem;
+        }
+
+        .color-meta .color-name {
+            font-weight: 600;
+            font-family: var(--font-heading);
+            margin-bottom: 0.2rem;
+        }
+
+        .color-meta .color-hex {
+            color: var(--warm-muted);
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+        }
+
+        /* ===== TYPOGRAPHY SPECIMEN ===== */
+        .type-row {
+            padding: 1.5rem;
+            border: 1px solid var(--slate-700);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: baseline;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .type-label {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--warm-muted);
+            white-space: nowrap;
+            min-width: 100px;
+        }
+
+        /* ===== CODE BLOCKS ===== */
+        pre {
+            background: var(--slate-900);
+            border: 1px solid var(--slate-700);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            overflow-x: auto;
+            font-size: 0.85rem;
+            line-height: 1.7;
+        }
+
+        pre code {
+            color: var(--warm-white);
+        }
+
+        .code-keyword {
+            color: #79c0ff;
+        }
+
+        .code-string {
+            color: #a5d6ff;
+        }
+
+        .code-comment {
+            color: var(--warm-muted);
+            font-style: italic;
+        }
+
+        .code-tag {
+            color: #7ee787;
+        }
+
+        .code-attr {
+            color: var(--gold-400);
+        }
+
+        .code-punct {
+            color: var(--warm-muted);
+        }
+
+        /* ===== BADGES ===== */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-gold {
+            background: rgba(197, 171, 110, 0.15);
+            color: var(--gold-400);
+            border: 1px solid rgba(197, 171, 110, 0.3);
+        }
+
+        .badge-success {
+            background: rgba(76, 175, 120, 0.15);
+            color: var(--success);
+            border: 1px solid rgba(76, 175, 120, 0.3);
+        }
+
+        .badge-error {
+            background: rgba(224, 82, 82, 0.15);
+            color: var(--error);
+            border: 1px solid rgba(224, 82, 82, 0.3);
+        }
+
+        .badge-info {
+            background: rgba(107, 159, 212, 0.15);
+            color: var(--info);
+            border: 1px solid rgba(107, 159, 212, 0.3);
+        }
+
+        .badge-outline {
+            background: transparent;
+            color: var(--warm-muted);
+            border: 1px solid var(--slate-600);
+        }
+
+        .badge .pulse {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        /* ===== STATUS BADGE ===== */
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.3rem 0.85rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .status-active {
+            background: rgba(76, 175, 120, 0.12);
+            color: var(--success);
+            border: 1px solid rgba(76, 175, 120, 0.25);
+        }
+
+        .status-pending {
+            background: rgba(212, 168, 67, 0.12);
+            color: var(--warning);
+            border: 1px solid rgba(212, 168, 67, 0.25);
+        }
+
+        .status-error {
+            background: rgba(224, 82, 82, 0.12);
+            color: var(--error);
+            border: 1px solid rgba(224, 82, 82, 0.25);
+        }
+
+        /* ===== INPUTS ===== */
+        .input-demo {
+            background: var(--slate-800);
+            border: 1px solid var(--slate-600);
+            border-radius: var(--radius-sm);
+            padding: 0.6rem 0.875rem;
+            color: var(--warm-white);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            width: 100%;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            outline: none;
+        }
+
+        .input-demo:focus {
+            border-color: var(--gold-400);
+            box-shadow: 0 0 0 3px rgba(197, 171, 110, 0.15);
+        }
+
+        .input-demo::placeholder {
+            color: var(--warm-muted);
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--warm-white);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        /* ===== SEPARATOR ===== */
+        .separator {
+            border: none;
+            border-top: 1px solid var(--slate-700);
+            margin: 1.5rem 0;
+        }
+
+        /* ===== TABS ===== */
+        .tabs {
+            overflow: hidden;
+        }
+
+        .tab-list {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--slate-800);
+            border-radius: var(--radius);
+            padding: 0.25rem;
+            width: fit-content;
+            margin-bottom: 2rem;
+        }
+
+        .tab-btn {
+            padding: 0.5rem 1rem;
+            border-radius: calc(var(--radius) - 2px);
+            border: none;
+            cursor: pointer;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--warm-muted);
+            background: transparent;
+        }
+
+        .tab-btn.active {
+            background: var(--slate-950);
+            color: var(--warm-white);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        /* ===== INSTALL BLOCK ===== */
+        .install-block {
+            background: var(--slate-900);
+            border: 1px solid var(--slate-700);
+            border-radius: var(--radius);
+            padding: 1rem 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .install-cmd {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--gold-400);
+        }
+
+        .copy-btn {
+            padding: 0.35rem 0.75rem;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--slate-600);
+            background: transparent;
+            color: var(--warm-muted);
+            font-size: 0.8rem;
+            cursor: pointer;
+            font-family: var(--font-body);
+            transition: all 0.2s;
+        }
+
+        .copy-btn:hover {
+            border-color: var(--gold-400);
+            color: var(--gold-400);
+        }
+
+        .copy-btn.copied {
+            border-color: var(--success);
+            color: var(--success);
+        }
+
+        /* ===== STATS ===== */
+        .stat-card {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--warm-muted);
+            font-size: 0.9rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            border-top: 1px solid var(--slate-700);
+            padding: 3rem 0;
+            text-align: center;
+            color: var(--warm-muted);
+            font-size: 0.875rem;
+        }
+
+        footer a {
+            color: var(--gold-400);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== SHIMMER ANIMATION ===== */
+        @keyframes shimmer {
+            0% {
+                background-position: -200% center;
+            }
+
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        .shimmer-text {
+            background: linear-gradient(90deg, var(--gold-400) 0%, var(--warm-white) 40%, var(--gold-400) 80%, var(--copper-400) 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 4s linear infinite;
+        }
+
+        /* ===== MOTION ICON ===== */
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">🪐 <strong>AIOS</strong> <span>Design System</span></a>
+            <ul class="nav-links">
+                <li><a href="#tokens">Tokens</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#install">Install</a></li>
+            </ul>
+            <span class="nav-badge">v1.0.1</span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-tag">
+                <div class="dot"></div>
+                Saturn Theme • Caio Creator
+            </div>
+            <h1><span class="shimmer-text">AIOS Design System</span></h1>
+            <p>A premium component library crafted for the Caio Creator brand. Built on shadcn/ui, Radix UI, and
+                Tailwind CSS with a unique gold-obsidian aesthetic.</p>
+            <div class="hero-buttons">
+                <a href="#install" class="btn btn-gold">Get Started →</a>
+                <a href="https://www.npmjs.com/package/@caio-creator/components" target="_blank"
+                    class="btn btn-outline">View on NPM</a>
+                <a href="https://github.com/caio_almeida/caio-creator-aios" target="_blank" class="btn btn-ghost">GitHub
+                    ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section
+        style="padding: 3rem 0; background: var(--slate-900); border-top: 1px solid var(--slate-700); border-bottom: 1px solid var(--slate-700);">
+        <div class="container">
+            <div class="grid-4">
+                <div class="stat-card">
+                    <span class="stat-number gradient-text">3</span>
+                    <span class="stat-label">NPM Packages Published</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number gradient-text">150+</span>
+                    <span class="stat-label">Design Tokens</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number gradient-text">130+</span>
+                    <span class="stat-label">Curated Icons</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number gradient-text">WCAG</span>
+                    <span class="stat-label">AA Accessibility</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLORS -->
+    <section id="tokens">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">01 — Design Tokens</p>
+                <h2>Saturn <span class="gradient-text">Color Palette</span></h2>
+                <p>A premium gold-obsidian system engineered for authority, depth, and visual contrast.</p>
+            </div>
+
+            <div class="grid-3" style="margin-bottom:2rem;">
+                <div>
+                    <div class="color-swatch"
+                        style="background: linear-gradient(135deg, var(--gold-300), var(--gold-500));"></div>
+                    <div class="color-meta">
+                        <div class="color-name">Saturn Gold</div>
+                        <div class="color-hex">#C5AB6E — Primary</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background: var(--slate-950); border: 1px solid var(--slate-700);">
+                    </div>
+                    <div class="color-meta">
+                        <div class="color-name">Obsidian</div>
+                        <div class="color-hex">#0D1117 — Background</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background: var(--warm-white);"></div>
+                    <div class="color-meta">
+                        <div class="color-name">Warm White</div>
+                        <div class="color-hex">#EDE9DD — Foreground</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background: var(--copper-400);"></div>
+                    <div class="color-meta">
+                        <div class="color-name">Copper</div>
+                        <div class="color-hex">#C3A171 — Accent</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background: var(--slate-800); border: 1px solid var(--slate-700);">
+                    </div>
+                    <div class="color-meta">
+                        <div class="color-name">Charcoal</div>
+                        <div class="color-hex">#21262D — Card</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="color-swatch"
+                        style="background: linear-gradient(135deg, var(--success) 0%, var(--warning) 33%, var(--error) 66%, var(--info) 100%);">
+                    </div>
+                    <div class="color-meta">
+                        <div class="color-name">Semantic Scale</div>
+                        <div class="color-hex">Success · Warning · Error · Info</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 2rem;">
+                <p class="section-label" style="margin-bottom:1rem;">Gold Scale — 9 steps</p>
+                <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                    <div style="flex:1; min-width:40px;">
+                        <div style="height:48px; border-radius:var(--radius-sm); background:var(--gold-50);"></div>
+                        <div style="font-size:0.65rem; color:var(--warm-muted); text-align:center; margin-top:4px;">50
+                        </div>
+                    </div>
+                    <div style="flex:1; min-width:40px;">
+                        <div style="height:48px; border-radius:var(--radius-sm); background:var(--gold-100);"></div>
+                        <div style="font-size:0.65rem; color:var(--warm-muted); text-align:center; margin-top:4px;">100
+                        </div>
+                    </div>
+                    <div style="flex:1; min-width:40px;">
+                        <div style="height:48px; border-radius:var(--radius-sm); background:var(--gold-200);"></div>
+                        <div style="font-size:0.65rem; color:var(--warm-muted); text-align:center; margin-top:4px;">200
+                        </div>
+                    </div>
+                    <div style="flex:1; min-width:40px;">
+                        <div style="height:48px; border-radius:var(--radius-sm); background:var(--gold-300);"></div>
+                        <div style="font-size:0.65rem; color:var(--warm-muted); text-align:center; margin-top:4px;">300
+                        </div>
+                    </div>
+                    <div style="flex:1; min-width:40px;">
+                        <div
+                            style="height:48px; border-radius:var(--radius-sm); background:var(--gold-400); border: 2px solid rgba(255,255,255,0.2);">
+                        </div>
+                        <div
+                            style="font-size:0.65rem; color:var(--gold-400); text-align:center; margin-top:4px; font-weight:700;">
+                            400 ★</div>
+                    </div>
+                    <div style="flex:1; min-width:40px;">
+                        <div style="height:48px; border-radius:var(--radius-sm); background:var(--gold-500);"></div>
+                        <div style="font-size:0.65rem; color:var(--warm-muted); text-align:center; margin-top:4px;">500
+                        </div>
+                    </div>
+                    <div style="flex:1; min-width:40px;">
+                        <div style="height:48px; border-radius:var(--radius-sm); background:var(--gold-600);"></div>
+                        <div style="font-size:0.65rem; color:var(--warm-muted); text-align:center; margin-top:4px;">600
+                        </div>
+                    </div>
+                    <div style="flex:1; min-width:40px;">
+                        <div style="height:48px; border-radius:var(--radius-sm); background:var(--gold-700);"></div>
+                        <div style="font-size:0.65rem; color:var(--warm-muted); text-align:center; margin-top:4px;">700
+                        </div>
+                    </div>
+                    <div style="flex:1; min-width:40px;">
+                        <div style="height:48px; border-radius:var(--radius-sm); background:var(--gold-900);"></div>
+                        <div style="font-size:0.65rem; color:var(--warm-muted); text-align:center; margin-top:4px;">900
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TYPOGRAPHY -->
+    <section id="typography">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">02 — Typography</p>
+                <h2>Combo <span class="gradient-text">01 Typefaces</span></h2>
+                <p>Three purposefully chosen typefaces for authority, readability, and technical precision.</p>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+                <div class="type-row">
+                    <span class="type-label">Space Grotesk<br />Headings</span>
+                    <span
+                        style="font-family:var(--font-heading); font-size:2.5rem; font-weight:700; color:var(--warm-white);">Aa
+                        Bb Cc</span>
+                </div>
+                <div class="type-row">
+                    <span class="type-label">Space Grotesk<br />H1 — 56px 700</span>
+                    <span style="font-family:var(--font-heading); font-size:2rem; font-weight:700;">The strategic
+                        creator</span>
+                </div>
+                <div class="type-row">
+                    <span class="type-label">Space Grotesk<br />H2 — 36px 600</span>
+                    <span style="font-family:var(--font-heading); font-size:1.5rem; font-weight:600;">Authority over
+                        attention</span>
+                </div>
+                <div class="type-row">
+                    <span class="type-label">Plus Jakarta Sans<br />Body — 16px 400</span>
+                    <span style="font-family:var(--font-body); font-size:1rem;">The AIOS Framework is designed for
+                        creators who build systems, not just content. Every token, every component serves a
+                        purpose.</span>
+                </div>
+                <div class="type-row">
+                    <span class="type-label">JetBrains Mono<br />Code — 14px 400</span>
+                    <code
+                        style="font-family:var(--font-mono); font-size:0.875rem; color:var(--gold-400);">import { ButtonGlow } from "@caio-creator/components"</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPONENTS -->
+    <section id="components">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">03 — Components</p>
+                <h2>UI <span class="gradient-text">Kit Showcase</span></h2>
+                <p>Core shadcn/ui components extended with exclusive AIOS variants.</p>
+            </div>
+
+            <!-- TABS -->
+            <div class="tabs">
+                <div class="tab-list" role="tablist">
+                    <button class="tab-btn active" onclick="switchTab('buttons')" role="tab">Buttons</button>
+                    <button class="tab-btn" onclick="switchTab('cards')" role="tab">Cards</button>
+                    <button class="tab-btn" onclick="switchTab('forms')" role="tab">Forms</button>
+                    <button class="tab-btn" onclick="switchTab('badges')" role="tab">Badges</button>
+                </div>
+
+                <!-- BUTTONS TAB -->
+                <div id="tab-buttons" class="tab-panel active">
+                    <div class="card">
+                        <div
+                            style="display:flex; flex-wrap:wrap; gap:0.75rem; align-items:center; margin-bottom: 1.5rem;">
+                            <button class="btn btn-gold">Primary Action</button>
+                            <button class="btn btn-outline">Secondary</button>
+                            <button class="btn btn-ghost">Ghost</button>
+                            <button class="btn btn-outline"
+                                style="border-color:var(--error); color:var(--error);">Destructive</button>
+                            <button class="btn btn-outline" disabled
+                                style="opacity:0.5; cursor:not-allowed;">Disabled</button>
+                        </div>
+                        <hr class="separator" />
+                        <p class="section-label" style="margin-bottom:0.75rem;">AIOS Exclusive — ButtonGlow</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:0.75rem; align-items:center;">
+                            <button class="btn btn-gold"
+                                style="background: linear-gradient(135deg, var(--gold-300), var(--gold-500), var(--copper-400)); box-shadow: var(--shadow-gold-lg); letter-spacing:0.02em; text-transform:uppercase; font-size:0.8rem;">✦
+                                Execute Mission</button>
+                            <button class="btn btn-gold"
+                                style="background: linear-gradient(135deg, var(--gold-300), var(--gold-500), var(--copper-400));">Initialize
+                                AIOS →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARDS TAB -->
+                <div id="tab-cards" class="tab-panel">
+                    <div class="grid-2">
+                        <div class="card-glass">
+                            <div style="margin-bottom:1rem;">
+                                <span class="status-badge status-active"
+                                    style="margin-bottom:0.75rem; display:inline-flex;"><span class="pulse"
+                                        style="width:6px;height:6px;border-radius:50%;background:currentColor;animation:pulse-dot 2s ease-in-out infinite;"></span>
+                                    Active Protocol</span>
+                                <h3 style="font-family:var(--font-heading); margin-top:0.5rem; margin-bottom:0.5rem;"
+                                    class="gradient-text">CardGlass — AIOS Exclusive</h3>
+                                <p style="color:var(--warm-muted); font-size:0.9rem;">Frosted glass effect with animated
+                                    gold border on hover. Perfect for dashboard widgets and feature cards.</p>
+                            </div>
+                            <button class="btn btn-gold" style="width:100%; justify-content:center;">Deploy System
+                                →</button>
+                        </div>
+                        <div class="card">
+                            <div
+                                style="width:40px;height:40px;background:rgba(197,171,110,0.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1.2rem;">
+                                ⚡</div>
+                            <h3 style="font-family:var(--font-heading); font-size:1.125rem; margin-bottom:0.5rem;">
+                                Standard Card</h3>
+                            <p style="color:var(--warm-muted); font-size:0.875rem;">The base card variant with dark
+                                background and subtle border. Used for content sections and data containers.</p>
+                        </div>
+                        <div class="card">
+                            <div
+                                style="width:40px;height:40px;background:rgba(197,171,110,0.1);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1.2rem;">
+                                🎯</div>
+                            <h3 style="font-family:var(--font-heading); font-size:1.125rem; margin-bottom:0.5rem;">
+                                Strategic Objective</h3>
+                            <p style="color:var(--warm-muted); font-size:0.875rem;">Hover to reveal the gold border
+                                transition. Cards are fully responsive and accessible.</p>
+                        </div>
+                        <div class="card-glass"
+                            style="display:flex; flex-direction:column; justify-content:space-between;">
+                            <div>
+                                <h3 style="font-family:var(--font-heading); font-size:1.125rem; margin-bottom:0.75rem;">
+                                    System Status</h3>
+                                <div style="display:flex; flex-direction:column; gap:0.5rem; margin-bottom:1rem;">
+                                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                                        <span style="font-size:0.85rem; color:var(--warm-muted);">Content Engine</span>
+                                        <span class="status-badge status-active"
+                                            style="font-size:0.7rem; padding:0.15rem 0.6rem;"><span class="pulse"
+                                                style="width:5px;height:5px;border-radius:50%;background:currentColor;animation:pulse-dot 2s ease-in-out infinite;"></span>
+                                            Online</span>
+                                    </div>
+                                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                                        <span style="font-size:0.85rem; color:var(--warm-muted);">Brand Director</span>
+                                        <span class="status-badge status-pending"
+                                            style="font-size:0.7rem; padding:0.15rem 0.6rem;">Drafting</span>
+                                    </div>
+                                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                                        <span style="font-size:0.85rem; color:var(--warm-muted);">AI Model</span>
+                                        <span class="status-badge status-active"
+                                            style="font-size:0.7rem; padding:0.15rem 0.6rem;"><span class="pulse"
+                                                style="width:5px;height:5px;border-radius:50%;background:currentColor;animation:pulse-dot 2s ease-in-out infinite;"></span>
+                                            Ready</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORMS TAB -->
+                <div id="tab-forms" class="tab-panel">
+                    <div class="grid-2">
+                        <div class="card">
+                            <h3 style="font-family:var(--font-heading); font-size:1.125rem; margin-bottom:1.25rem;">
+                                Creator Settings</h3>
+                            <div class="form-group">
+                                <label class="form-label">Framework Name</label>
+                                <input class="input-demo" type="text" placeholder="AIOS Protocol"
+                                    value="AIOS Protocol" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Primary Niche</label>
+                                <input class="input-demo" type="text" placeholder="Creator Economy Strategy"
+                                    value="Creator Economy" />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input class="input-demo" type="email" placeholder="caio@caio-creator.com" />
+                            </div>
+                            <button class="btn btn-gold"
+                                style="width:100%; justify-content:center; margin-top:0.5rem;">Save Changes</button>
+                        </div>
+                        <div class="card">
+                            <h3 style="font-family:var(--font-heading); font-size:1.125rem; margin-bottom:1.25rem;">
+                                Focus on state</h3>
+                            <p style="color:var(--warm-muted); font-size:0.875rem; margin-bottom:1rem;">Click on any
+                                input field to see the gold focus ring — a signature Saturn interaction.</p>
+                            <div class="form-group">
+                                <label class="form-label">Click to focus</label>
+                                <input class="input-demo" type="text" placeholder="Gold ring appears on focus..." />
+                            </div>
+                            <div class="form-group" style="margin-top:1rem;">
+                                <label class="form-label">Password</label>
+                                <input class="input-demo" type="password" placeholder="••••••••" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BADGES TAB -->
+                <div id="tab-badges" class="tab-panel">
+                    <div class="card">
+                        <p class="section-label" style="margin-bottom:1.25rem;">Badge Variants</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-bottom:2rem;">
+                            <span class="badge badge-gold">Saturn Gold</span>
+                            <span class="badge badge-success">Success</span>
+                            <span class="badge badge-error">Error</span>
+                            <span class="badge badge-info">Info</span>
+                            <span class="badge badge-outline">Outline</span>
+                            <span class="badge badge-gold"
+                                style="font-size:0.8rem; padding:0.3rem 0.875rem;">v1.0.1</span>
+                        </div>
+                        <hr class="separator" />
+                        <p class="section-label" style="margin-bottom:1.25rem;">StatusBadge — AIOS Exclusive</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:0.75rem;">
+                            <span class="status-badge status-active"><span class="pulse"
+                                    style="width:6px;height:6px;border-radius:50%;background:currentColor;animation:pulse-dot 2s ease-in-out infinite;"></span>
+                                AIOS Engine Online</span>
+                            <span class="status-badge status-pending">Drafting Strategy</span>
+                            <span class="status-badge status-error">Action Required</span>
+                            <span class="status-badge status-active"><span class="pulse"
+                                    style="width:6px;height:6px;border-radius:50%;background:currentColor;animation:pulse-dot 2s ease-in-out infinite;"></span>
+                                Live Broadcast</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTALL -->
+    <section id="install">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">04 — Installation</p>
+                <h2>Start <span class="gradient-text">Building</span></h2>
+                <p>3 packages. 1 design language. Published on NPM under the official @caio-creator organization.</p>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:1.5rem; max-width:720px;">
+                <div>
+                    <p style="font-size:0.85rem; color:var(--warm-muted); margin-bottom:0.5rem;">1. Install packages</p>
+                    <div class="install-block">
+                        <code
+                            class="install-cmd">npm install @caio-creator/components @caio-creator/tokens @caio-creator/icons</code>
+                        <button class="copy-btn"
+                            onclick="copyCode(this, 'npm install @caio-creator/components @caio-creator/tokens @caio-creator/icons')">Copy</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p style="font-size:0.85rem; color:var(--warm-muted); margin-bottom:0.5rem;">2. Import and use</p>
+                    <pre><code><span class="code-keyword">import</span> <span class="code-punct">{</span>
+  Button, Card, Input,
+  Heading, Text
+<span class="code-punct">}</span> <span class="code-keyword">from</span> <span class="code-string">"@caio-creator/components"</span>
+<span class="code-keyword">import</span> <span class="code-punct">{</span> Sparkles, ArrowRight <span class="code-punct">}</span> <span class="code-keyword">from</span> <span class="code-string">"@caio-creator/icons"</span>
+
+<span class="code-keyword">export function</span> AIOSCard<span class="code-punct">() {</span>
+  <span class="code-keyword">return</span> <span class="code-punct">(</span>
+    <span class="code-tag">&lt;Card&gt;</span>
+      <span class="code-tag">&lt;Heading</span> <span class="code-attr">level</span>=<span class="code-string">"h2"</span><span class="code-tag">&gt;</span>AIOS Protocol<span class="code-tag">&lt;/Heading&gt;</span>
+      <span class="code-tag">&lt;Button&gt;</span>
+        <span class="code-tag">&lt;Sparkles /&gt;</span> Execute Mission
+      <span class="code-tag">&lt;/Button&gt;</span>
+    <span class="code-tag">&lt;/Card&gt;</span>
+  <span class="code-punct">)</span>
+<span class="code-punct">}</span></code></pre>
+                </div>
+
+                <div class="card-glass" style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap;">
+                    <div>
+                        <h3 style="font-family:var(--font-heading); margin-bottom:0.5rem;">Published Packages</h3>
+                        <p style="color:var(--warm-muted); font-size:0.875rem;">All packages are public, typed, and
+                            tree-shakeable.</p>
+                    </div>
+                    <div style="display:flex; flex-direction:column; gap:0.5rem; flex:1; min-width:220px;">
+                        <a href="https://www.npmjs.com/package/@caio-creator/tokens" target="_blank"
+                            class="install-block" style="text-decoration:none; transition:border-color 0.2s;">
+                            <code class="install-cmd" style="font-size:0.8rem;">@caio-creator/tokens</code>
+                            <span class="badge badge-gold">v1.0.1</span>
+                        </a>
+                        <a href="https://www.npmjs.com/package/@caio-creator/icons" target="_blank"
+                            class="install-block" style="text-decoration:none;">
+                            <code class="install-cmd" style="font-size:0.8rem;">@caio-creator/icons</code>
+                            <span class="badge badge-gold">v1.0.1</span>
+                        </a>
+                        <a href="https://www.npmjs.com/package/@caio-creator/components" target="_blank"
+                            class="install-block" style="text-decoration:none;">
+                            <code class="install-cmd" style="font-size:0.8rem;">@caio-creator/components</code>
+                            <span class="badge badge-gold">v1.0.1</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p style="margin-bottom:0.5rem;">
+                <strong style="font-family:var(--font-heading);">AIOS Design System</strong> — Saturn Theme v1.0.1
+            </p>
+            <p>
+                Built by <a href="https://github.com/caio_almeida">Caio Creator</a> ·
+                <a href="https://www.npmjs.com/org/caio-creator" target="_blank">NPM Org</a> ·
+                MIT License
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(name) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.getElementById('tab-' + name).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function copyCode(btn, text) {
+            navigator.clipboard.writeText(text).then(() => {
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Copy';
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+
+</html>
