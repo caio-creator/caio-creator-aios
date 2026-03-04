@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- SIDEBAR — Fixed left navigation -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo" id="sidebarLogo">
+        <!-- JS: client logo image -->
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-group">
+        <span class="nav-group-label">Marca</span>
+        <a href="#hero" class="nav-link active" data-section="hero" aria-label="Seção Capa">Capa</a>
+        <a href="#manifesto" class="nav-link" data-section="manifesto" aria-label="Seção Manifesto">Manifesto</a>
+        <a href="#valores" class="nav-link" data-section="valores" aria-label="Seção Valores">Valores</a>
+        <a href="#voz" class="nav-link" data-section="voz" aria-label="Seção Tom de Voz">Tom de Voz</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Identidade</span>
+        <a href="#logo" class="nav-link" data-section="logo" aria-label="Seção Logo">Logo</a>
+        <a href="#cores" class="nav-link" data-section="cores" aria-label="Seção Paleta de Cores">Cores</a>
+        <a href="#tipografia" class="nav-link" data-section="tipografia" aria-label="Seção Tipografia">Tipografia</a>
+        <a href="#grafismos" class="nav-link" data-section="grafismos" aria-label="Seção Grafismos">Grafismos</a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-group-label">Aplica&#231;&#245;es</span>
+        <a href="#fotografia" class="nav-link" data-section="fotografia" aria-label="Seção Fotografia">Fotografia</a>
+        <a href="#aplicacoes" class="nav-link" data-section="aplicacoes" aria-label="Seção Aplicações">Aplica&#231;&#245;es</a>
+        <a href="#resumo" class="nav-link" data-section="resumo" aria-label="Seção Resumo Rápido">Resumo</a>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-credit">
+        <span class="credit-label" id="creditLabel">Criado por</span>
+        <span class="credit-name">Caio Creator</span>
+      </div>
+      <span class="sidebar-year" id="sidebarYear"></span>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT — Scrollable area -->
+  <main class="main-content" id="mainContent">
+
+    <!-- S1: HERO / CAPA -->
+    <section class="section section-hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-logo" id="heroLogo"><!-- JS: logo --></div>
+        <h1 class="hero-title" id="heroTitle"><!-- JS: brand name --></h1>
+        <p class="hero-tagline" id="heroTagline"><!-- JS: tagline --></p>
+        <div class="hero-divider"></div>
+        <span class="hero-label">Brandbook</span>
+      </div>
+      <div class="hero-marquee">
+        <div class="marquee-track">
+          <span class="marquee-text" id="marqueeText"><!-- JS: repeated brand name --></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- S2: MANIFESTO -->
+    <section class="section section-manifesto" id="manifesto">
+      <div class="section-inner">
+        <span class="section-label">01</span>
+        <h2 class="section-title" id="manifestoTitle"><!-- JS --></h2>
+        <div class="manifesto-text" id="manifestoText">
+          <!-- JS: drop cap paragraph -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S3: VALORES & PILARES -->
+    <section class="section section-valores" id="valores">
+      <div class="section-inner">
+        <span class="section-label">02</span>
+        <h2 class="section-title">Valores &amp; Pilares</h2>
+        <div class="values-grid" id="valuesGrid">
+          <!-- JS: value cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S4: TOM DE VOZ -->
+    <section class="section section-voz" id="voz">
+      <div class="section-inner">
+        <span class="section-label">03</span>
+        <h2 class="section-title">Tom de Voz</h2>
+        <div class="voice-container">
+          <div class="voice-column voice-do">
+            <h3 class="voice-heading">Somos</h3>
+            <ul class="voice-list" id="voiceDo"><!-- JS --></ul>
+          </div>
+          <div class="voice-divider"></div>
+          <div class="voice-column voice-dont">
+            <h3 class="voice-heading">N&#227;o somos</h3>
+            <ul class="voice-list" id="voiceDont"><!-- JS --></ul>
+          </div>
+        </div>
+        <div class="voice-examples" id="voiceExamples">
+          <!-- JS: communication examples -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S5: LOGO -->
+    <section class="section section-logo" id="logo">
+      <div class="section-inner">
+        <span class="section-label">04</span>
+        <h2 class="section-title">Logo</h2>
+
+        <div class="logo-primary-showcase" id="logoPrimary">
+          <!-- JS: primary logo large -->
+        </div>
+
+        <h3 class="subsection-title">Varia&#231;&#245;es</h3>
+        <div class="logo-variations-grid" id="logoVariations">
+          <!-- JS: logo variation cards -->
+        </div>
+
+        <h3 class="subsection-title">Uso Restrito</h3>
+        <div class="logo-restrictions" id="logoRestrictions">
+          <!-- JS: do/don't cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S6: PALETA DE CORES -->
+    <section class="section section-cores" id="cores">
+      <div class="section-inner">
+        <span class="section-label">05</span>
+        <h2 class="section-title">Paleta de Cores</h2>
+        <div class="colors-container" id="colorsContainer">
+          <!-- JS: color groups with swatches -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S7: TIPOGRAFIA -->
+    <section class="section section-tipografia" id="tipografia">
+      <div class="section-inner">
+        <span class="section-label">06</span>
+        <h2 class="section-title">Tipografia</h2>
+        <div class="typography-showcase" id="typographyShowcase">
+          <!-- JS: font samples -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S8: GRAFISMOS & ELEMENTOS -->
+    <section class="section section-grafismos" id="grafismos">
+      <div class="section-inner">
+        <span class="section-label">07</span>
+        <h2 class="section-title">Grafismos &amp; Elementos</h2>
+        <div class="patterns-grid" id="patternsGrid">
+          <!-- JS: pattern/element cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S9: FOTOGRAFIA -->
+    <section class="section section-fotografia" id="fotografia">
+      <div class="section-inner">
+        <span class="section-label">08</span>
+        <h2 class="section-title">Fotografia</h2>
+        <div class="photo-guidelines" id="photoGuidelines">
+          <!-- JS: style text -->
+        </div>
+        <div class="mood-board" id="moodBoard">
+          <!-- JS: photo grid -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S10: APLICA&#199;&#213;ES -->
+    <section class="section section-aplicacoes" id="aplicacoes">
+      <div class="section-inner">
+        <span class="section-label">09</span>
+        <h2 class="section-title">Aplica&#231;&#245;es</h2>
+        <div class="applications-grid" id="applicationsGrid">
+          <!-- JS: mockup cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S11: RESUMO QUICK REFERENCE -->
+    <section class="section section-resumo" id="resumo">
+      <div class="section-inner">
+        <span class="section-label">10</span>
+        <h2 class="section-title">Resumo</h2>
+        <div class="summary-card" id="summaryCard">
+          <!-- JS: quick reference card -->
+        </div>
+      </div>
+    </section>
+
+    <!-- S12: FOOTER -->
+    <footer class="section section-footer" id="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-made">Brandbook criado por</span>
+          <span class="footer-creator">Caio Creator</span>
+        </div>
+        <div class="footer-meta">
+          <span class="footer-date" id="footerDate"><!-- JS --></span>
+          <span class="footer-separator">&#183;</span>
+          <span class="footer-version">v1.0</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

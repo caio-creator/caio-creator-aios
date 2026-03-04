@@ -1,0 +1,234 @@
+{
+  "brand": {
+    "name": "Aethel",
+    "tagline": "The New Dawn. Discover Elevated Luxury.",
+    "logo": "assets/logo-primary.svg",
+    "year": 2026,
+    "updated_at": "2026-03-01"
+  },
+  "manifesto": {
+    "title": "Nossa Essência",
+    "text": "Existe algo que nos move. Algo que vai além de um produto, além de um serviço. É a convicção de que cada detalhe importa, cada interação conta, cada momento é uma oportunidade de criar algo memorável.\n\nNascemos da inquietude criativa. Da vontade de desafiar o óbvio e construir narrativas que realmente conectam. Não seguimos tendências — nós as questionamos, desconstruímos e reconstruímos com propósito.\n\nAcreditamos que marcas fortes não são construídas com fórmulas. São construídas com verdade, consistência e coragem de ser diferente.\n"
+  },
+  "values": [
+    {
+      "icon": "🎯",
+      "title": "Precisão",
+      "description": "Cada decisão é intencional. Cada pixel tem propósito. Não fazemos por fazer — fazemos porque faz sentido."
+    },
+    {
+      "icon": "🔥",
+      "title": "Ousadia",
+      "description": "Desafiamos o convencional. Se todo mundo faz igual, a gente faz diferente — com substância, não só estética."
+    },
+    {
+      "icon": "🤝",
+      "title": "Autenticidade",
+      "description": "Somos transparentes em cada etapa. A marca reflete quem você realmente é, não quem o mercado quer que seja."
+    },
+    {
+      "icon": "⚡",
+      "title": "Agilidade",
+      "description": "Velocidade com qualidade. Processos enxutos que entregam resultados sem perder o cuidado."
+    }
+  ],
+  "voice": {
+    "we_are": [
+      "Diretos e objetivos",
+      "Acessíveis mas não informais demais",
+      "Criativos com propósito",
+      "Técnicos quando necessário",
+      "Humanos sempre"
+    ],
+    "we_are_not": [
+      "Corporativos ou burocráticos",
+      "Genéricos ou copiadores",
+      "Arrogantes ou distantes",
+      "Complicados sem necessidade",
+      "Passivos ou sem opinião"
+    ],
+    "examples": [
+      {
+        "context": "Redes sociais",
+        "text": "Direto ao ponto, com personalidade. Frases curtas, impacto alto."
+      },
+      {
+        "context": "Apresentações",
+        "text": "Profissional mas acessível. Dados com storytelling. Números que contam histórias."
+      },
+      {
+        "context": "Atendimento",
+        "text": "Empático e resolutivo. Ouvimos primeiro, resolvemos depois, surpreendemos sempre."
+      }
+    ]
+  },
+  "logo": {
+    "primary": "assets/logo-primary.svg",
+    "variations": [
+      {
+        "name": "Horizontal",
+        "src": "assets/logo-horizontal.svg"
+      },
+      {
+        "name": "Vertical",
+        "src": "assets/logo-vertical.svg"
+      },
+      {
+        "name": "Ícone",
+        "src": "assets/logo-icon.svg"
+      },
+      {
+        "name": "Monocromática",
+        "src": "assets/logo-mono.svg"
+      }
+    ],
+    "restrictions": [
+      {
+        "type": "do",
+        "text": "Use sempre com área de respiro adequada"
+      },
+      {
+        "type": "do",
+        "text": "Mantenha as proporções originais"
+      },
+      {
+        "type": "dont",
+        "text": "Não distorça ou rotacione a logo"
+      },
+      {
+        "type": "dont",
+        "text": "Não aplique sobre fundos que comprometam a leitura"
+      }
+    ]
+  },
+  "colors": {
+    "primary": [
+      {
+        "name": "Brand Primary",
+        "hex": "#6366F1",
+        "rgb": "99, 102, 241"
+      },
+      {
+        "name": "Brand Dark",
+        "hex": "#4338CA",
+        "rgb": "67, 56, 202"
+      }
+    ],
+    "secondary": [
+      {
+        "name": "Accent",
+        "hex": "#F59E0B",
+        "rgb": "245, 158, 11"
+      },
+      {
+        "name": "Accent Light",
+        "hex": "#FCD34D",
+        "rgb": "252, 211, 77"
+      }
+    ],
+    "neutral": [
+      {
+        "name": "Preto",
+        "hex": "#0A0A0B",
+        "rgb": "10, 10, 11"
+      },
+      {
+        "name": "Cinza Escuro",
+        "hex": "#27272A",
+        "rgb": "39, 39, 42"
+      },
+      {
+        "name": "Cinza Médio",
+        "hex": "#71717A",
+        "rgb": "113, 113, 122"
+      },
+      {
+        "name": "Branco",
+        "hex": "#FAFAFA",
+        "rgb": "250, 250, 250"
+      }
+    ]
+  },
+  "typography": [
+    {
+      "family": "Inter",
+      "role": "Headline",
+      "weights": [
+        700,
+        900
+      ],
+      "sizes": [
+        48,
+        36,
+        24,
+        20
+      ]
+    },
+    {
+      "family": "Inter",
+      "role": "Body",
+      "weights": [
+        400,
+        500,
+        600
+      ],
+      "sizes": [
+        16,
+        14,
+        13,
+        12
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "name": "Pattern Principal",
+      "description": "Padrão gráfico para fundos e materiais impressos",
+      "src": "assets/pattern-01.svg"
+    },
+    {
+      "name": "Textura Secundária",
+      "description": "Textura sutil para backgrounds digitais",
+      "src": "assets/pattern-02.svg"
+    }
+  ],
+  "photography": {
+    "guidelines": "O estilo fotográfico da marca prioriza autenticidade e humanidade. Imagens devem transmitir conexão genuína, com iluminação natural e composições equilibradas.\n\nEvite fotos genéricas de banco de imagens. Prefira sempre registros autênticos que reflitam a energia e os valores da marca.\n",
+    "mood": [
+      {
+        "src": "assets/photo-01.jpg",
+        "alt": "Mood principal"
+      },
+      {
+        "src": "assets/photo-02.jpg",
+        "alt": "Estilo secundário"
+      },
+      {
+        "src": "assets/photo-03.jpg",
+        "alt": "Detalhe"
+      }
+    ]
+  },
+  "applications": [
+    {
+      "title": "Social Media",
+      "category": "Digital",
+      "image": "assets/mockup-social.jpg"
+    },
+    {
+      "title": "Email Signature",
+      "category": "Digital",
+      "image": "assets/mockup-email.jpg"
+    },
+    {
+      "title": "Business Card",
+      "category": "Impresso",
+      "image": "assets/mockup-card.jpg"
+    },
+    {
+      "title": "Apresentação",
+      "category": "Digital",
+      "image": "assets/mockup-presentation.jpg"
+    }
+  ]
+}

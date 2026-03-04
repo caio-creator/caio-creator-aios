@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentation Slides — Caio Creator</title>
+    <style>
+        body { margin: 0; padding: 20px; background: #f5f5f5; font-family: Inter, sans-serif; }
+        .canvas { background: white; padding: 30px; border-radius: 8px; }
+        .slide { 
+            width: 100%; 
+            max-width: 960px; 
+            aspect-ratio: 16/9;
+            display: flex;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .slide-title {
+            background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+            color: #FAFAFA;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .slide-title::before {
+            content: '◆';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 32px;
+            opacity: 0.5;
+        }
+        .slide-title h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .slide-title p {
+            font-size: 24px;
+            opacity: 0.9;
+        }
+        .slide-content {
+            background: white;
+            color: #0A0A0B;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+        }
+        .slide-content h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #2563EB;
+        }
+        .slide-content ul {
+            list-style: none;
+            font-size: 28px;
+            line-height: 2;
+        }
+        .slide-content li::before {
+            content: '▪ ';
+            color: #F97316;
+            font-weight: 700;
+            margin-right: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <h2 style="margin-bottom: 20px; color: #333; font-size: 18px;">Presentation Slides (16:9)</h2>
+        
+        <h3 style="color: #666; margin-top: 40px; margin-bottom: 10px;">Slide 1: Title Slide</h3>
+        <div class="slide">
+            <div class="slide-title">
+                <h1>Seu Posicionamento é<br>Seu Moat</h1>
+                <p>Como construir marcas de criadores com receita sustentável</p>
+            </div>
+        </div>
+
+        <h3 style="color: #666; margin-top: 40px; margin-bottom: 10px;">Slide 2: Content Slide</h3>
+        <div class="slide">
+            <div class="slide-content">
+                <h2>3 Pilares do Sucesso</h2>
+                <ul>
+                    <li>Posicionamento Estratégico</li>
+                    <li>Monetização Focada (2-3 playbooks)</li>
+                    <li>Sistemas para Escala</li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="margin-top: 20px; color: #666; font-size: 12px;">
+            💡 Title slide: Blue gradient + white text. Content slide: White background with blue headings and orange accents
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Header — Caio Creator</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Inter, sans-serif; }
+        header {
+            background: #0A0A0B;
+            color: #FAFAFA;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #27272A;
+        }
+        .logo { font-size: 20px; font-weight: 700; display: flex; align-items: center; }
+        .logo-accent { color: #2563EB; margin-right: 8px; }
+        nav a {
+            color: #FAFAFA;
+            text-decoration: none;
+            margin: 0 24px;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: #2563EB; }
+        .cta {
+            background: #2563EB;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .cta:hover { background: #1E40AF; }
+        .canvas {
+            background: white;
+            padding: 40px;
+            margin: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .canvas h2 { margin-bottom: 30px; color: #333; }
+        .header-preview { border: 1px solid #E4E4E7; border-radius: 8px; overflow: hidden; }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+        <h2>Website Header</h2>
+        <div class="header-preview">
+            <header>
+                <div class="logo">
+                    <span class="logo-accent">◆</span>
+                    <span>Caio Creator</span>
+                </div>
+                <nav>
+                    <a href="#">Strategy</a>
+                    <a href="#">Community</a>
+                    <a href="#">Resources</a>
+                    <a href="#">About</a>
+                </nav>
+                <a href="#" class="cta">Get Started</a>
+            </header>
+        </div>
+        <p style="margin-top: 20px; color: #666; font-size: 12px;">
+            💡 Dark background, minimal navigation, clear CTA button, responsive design
+        </p>
+    </div>
+</body>
+</html>
