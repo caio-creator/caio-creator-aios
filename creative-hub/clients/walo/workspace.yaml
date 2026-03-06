@@ -1,0 +1,98 @@
+workspace:
+  client_name: "WALO — We Are Love"
+  client_slug: "walo"
+  project_type: "branding+agenting"
+
+  created_at: "2026-03-06"
+  updated_at: "2026-03-06"
+  target_delivery: "2026-04-05"
+
+  brand_director: "@brand-director"
+  project_owner: "Gabriel Possigollo"
+  client_contact: "Gabriel Possigollo, Gustavo Risan, Roger Maestrello"
+
+status:
+  current: "positioning"
+  phase_number: 2
+  completion_percent: 75
+
+  phases:
+    01_briefing: true
+    02_positioning: true
+    03_audience: true
+    04_voice: true
+    05_narrative: true
+    06_editorial: true
+    07_visual: true
+    08_digital: true
+    09_brandbook: false
+    brand_completeness_gate: false
+    client_delivery_gate: false
+    delivered: false
+
+client_context:
+  industry: "Beverage | Wellness | F&B"
+  business_type: "B2C — Branded Functional Drink"
+  stage: "Launch — 60 days to market"
+  main_channels: ["tiktok_shop", "marketplace", "academy"]
+  key_differentiator: "Premium-accessible functional drink that transforms hydration into self-love and inclusion. No judgment, no body standards."
+
+method:
+  mode: "interactive"
+  gpt_builder_enabled: true
+  gpt_builder_config:
+    status: "blueprints_pending"
+    openai_plan_required: "Plus"
+    last_updated: "2026-03-06"
+    planned_gpts:
+      - name: "WALO Content Strategist"
+        blueprint: "gpt-builder/gpt-content-strategist-blueprint.md"
+        jtbd: "Generate content in exact tone and voice of WALO brand"
+        deploy_status: "pending"
+      - name: "WALO Community Manager"
+        blueprint: "gpt-builder/gpt-community-manager-blueprint.md"
+        jtbd: "Engage community and manage UGC with WALO voice"
+        deploy_status: "pending"
+    published_gpts: []
+
+  agenting_enabled: true
+  planned_agents:
+    - "walo-content-strategist"
+    - "walo-community-manager"
+
+key_decisions:
+  - date: "2026-03-06"
+    phase: "briefing"
+    decision: "Premium accessible positioning with arco-iris progressive color system"
+    rationale: "Uniquely occupies space between premium exclusivity and accessible wellness"
+  - date: "2026-03-06"
+    phase: "positioning"
+    decision: "3 levels of voice: Institutional / Operacional / Cultural-Street"
+    rationale: "Different audiences (TikTok creators vs. marketplace customers) require tonal calibration"
+  - date: "2026-03-06"
+    phase: "strategy"
+    decision: "TikTok Shop as primary channel with marketplace as distribution"
+    rationale: "60-day launch window + 20-40yo urban demographic align with short-form video"
+
+notes: |
+  WALO é uma marca inclusiva de bebida funcional para Gen Z e millennial urbanos.
+
+  Particularidades:
+  - Posicionamento premium acessível (não exclusivo)
+  - Foco em inclusão real (corpos diversos, sem padrão)
+  - Tom afetuoso mas autêntico (não corporativo)
+  - Sistema de cores expansível (arco-íris de 7 cores)
+  - Lançamento rápido (TikTok Shop em 60 dias)
+
+  Insumos disponíveis:
+  - 3 PDFs com briefing detalhado (extrato 2026-03-06)
+  - 7 brand guidelines documentadas (1.943 linhas)
+  - Personas definidas (Luna core, 4 segmentos)
+  - Editorial calendar framework pronto
+  - Digital strategy documentada
+
+  Timeline esperada:
+  - Phase 1 Approval: 7-8 mar (esperado)
+  - Phase 2 Execution: 8-13 mar
+  - Phase 3 Brand Book: 13-17 mar
+  - Phase 4 Launch: 17-20 mar+

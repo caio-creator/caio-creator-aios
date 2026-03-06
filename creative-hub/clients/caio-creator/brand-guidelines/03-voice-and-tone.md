@@ -25,3 +25,4 @@
 
 **Status:** APPROVED ✅
 **Updated:** 2026-03-01
+**Brand Designer & Estrategista:** Caio © Creator & Co.
