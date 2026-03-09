@@ -1,0 +1,21 @@
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  background: rgba(var(--color-rgb), 0.08);
+  border: 1px solid rgba(var(--color-rgb), 0.2);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.name {
+  white-space: nowrap;
+}

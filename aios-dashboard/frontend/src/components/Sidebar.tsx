@@ -3,6 +3,7 @@ import styles from './Sidebar.module.css';
 
 const NAV_ITEMS = [
   { to: '/', label: 'Home', icon: '⌂' },
+  { to: '/chat', label: 'Chat', icon: '◆' },
   { to: '/clients', label: 'Clientes', icon: '◈' },
   { to: '/stories', label: 'Stories', icon: '◉' },
   { to: '/agents', label: 'Agentes', icon: '◎' },

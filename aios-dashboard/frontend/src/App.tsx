@@ -5,6 +5,7 @@ import { ClientsPage } from './pages/ClientsPage';
 import { StoriesPage } from './pages/StoriesPage';
 import { AgentsPage } from './pages/AgentsPage';
 import { ModulesPage } from './pages/ModulesPage';
+import { ChatPage } from './pages/ChatPage';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/stories" element={<StoriesPage />} />
         <Route path="/agents" element={<AgentsPage />} />
         <Route path="/modules" element={<ModulesPage />} />
+        <Route path="/chat" element={<ChatPage />} />
       </Routes>
     </Layout>
   );

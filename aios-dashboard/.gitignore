@@ -3,3 +3,10 @@ backend/node_modules/
 frontend/node_modules/
 backend/dist/
 frontend/dist/
+
+# Environment variables (contains API keys)
+.env.local
+.env
+
+# Local session storage
+~/.aios-sessions/

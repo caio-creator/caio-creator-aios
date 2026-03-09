@@ -1,0 +1,90 @@
+.sidebar {
+  width: 240px;
+  border-right: 1px solid #e5e7eb;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0.75rem;
+  overflow-y: auto;
+}
+
+.newBtn {
+  padding: 0.75rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.newBtn:hover {
+  background: #2563eb;
+}
+
+.sessionsList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+
+.empty {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.8125rem;
+  padding: 1rem 0.5rem;
+}
+
+.sessionItem {
+  text-align: left;
+  padding: 0.75rem;
+  background: white;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.8125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sessionItem:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.sessionItem.active {
+  background: #e0e7ff;
+  border-color: #3b82f6;
+  color: #1e40af;
+}
+
+.title {
+  font-weight: 500;
+  color: #374151;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.sessionItem.active .title {
+  color: #1e40af;
+}
+
+.agent {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+}
+
+.sessionItem.active .agent {
+  color: #3b82f6;
+}

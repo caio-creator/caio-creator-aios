@@ -39,6 +39,22 @@ async function get<T>(endpoint: string): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+export interface ChatMessage {
+  role: 'user' | 'assistant';
+  content: string;
+}
+
+export interface Session {
+  id: string;
+  agentId: string;
+  clientSlug?: string;
+  title: string;
+  messages: ChatMessage[];
+  model?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
 export const api = {
   clients: () => get<Client[]>('/clients'),
   stories: () => get<Story[]>('/stories'),
@@ -50,4 +66,28 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ file, status }),
     }).then(r => r.json()),
+
+  sessions: {
+    list: () => get<Session[]>('/sessions'),
+    get: (id: string) => get<Session>(`/sessions/${id}`),
+    create: (agentId: string, clientSlug?: string) =>
+      fetch(`${BASE}/sessions`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ agentId, clientSlug }),
+      }).then(r => r.json() as Promise<Session>),
+  },
+
+  chat: {
+    stream: (params: {
+      agentId: string;
+      messages: ChatMessage[];
+      clientSlug?: string;
+      sessionId?: string;
+    }) => fetch(`${BASE}/chat/stream`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(params),
+    }),
+  },
 };
