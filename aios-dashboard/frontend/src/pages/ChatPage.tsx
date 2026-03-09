@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './ChatPage.isolated.css'; // Design isolado e compatível
 import { api, Session, ChatMessage } from '../lib/api';
 import { streamChat } from '../lib/chat-stream';
 import { ChatSidebar } from '../components/ChatSidebar';
@@ -126,7 +127,7 @@ export function ChatPage() {
   const canCopy = lastAssistantMsg && !isStreaming;
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} chat-page-wrapper`}>
       <ChatSidebar
         sessions={sessions}
         activeSessionId={activeSessionId}
