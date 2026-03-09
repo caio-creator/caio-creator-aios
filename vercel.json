@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build --prefix aios-dashboard/frontend",
+  "outputDirectory": "aios-dashboard/frontend/dist",
+  "devCommand": "npm run dev",
+  "regions": ["sfo1"],
+  "env": {
+    "VITE_API_URL": "@vite-api-url",
+    "GROQ_API_KEY": "@groq-api-key",
+    "OPENROUTER_API_KEY": "@openrouter-api-key",
+    "SUPABASE_URL": "@supabase-url",
+    "SUPABASE_ANON_KEY": "@supabase-anon-key"
+  }
+}
