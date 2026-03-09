@@ -1,0 +1,59 @@
+/* Correções de layout para compatibilidade com design system */
+
+/* HomePage - Métricas em grid */
+.metrics-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 1rem !important;
+  margin: 2rem 0 !important;
+}
+
+.metric-item {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+}
+
+.metric-value {
+  display: block !important;
+}
+
+.metric-label {
+  display: block !important;
+}
+
+/* HomePage - Heading */
+main h1 {
+  font-size: 2rem !important;
+  margin: 1rem 0 !important;
+}
+
+main h2 {
+  font-size: 1.5rem !important;
+  margin: 1.5rem 0 1rem 0 !important;
+}
+
+/* Layouts base */
+main {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+}
+
+/* Cards */
+.project-card,
+.agent-card {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+  padding: 1rem !important;
+}
+
+/* Typography reset para compatibilidade */
+p, span {
+  display: inline !important;
+}
+
+div > p {
+  display: block !important;
+}

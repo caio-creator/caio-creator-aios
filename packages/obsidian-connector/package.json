@@ -1,0 +1,37 @@
+{
+  "name": "@aios/obsidian-connector",
+  "version": "1.0.0",
+  "description": "File system based Obsidian vault connector with polling and tag-based triggers",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "obsidian",
+    "aios",
+    "vault",
+    "connector",
+    "polling"
+  ],
+  "author": "Caio Almeida",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "yaml": "^2.3.0",
+    "pino": "^8.17.0"
+  }
+}
