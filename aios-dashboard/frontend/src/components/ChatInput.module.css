@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding: 1rem;
-  border-top: 1px solid #e5e7eb;
-  background: white;
+  padding: 1.25rem;
+  border-top: 1px solid var(--cc-gold-400, rgba(197, 171, 110, 0.2));
+  background: var(--cc-surface-active);
+  font-family: var(--cc-font-body);
 }
 
 .inputWrapper {
@@ -18,60 +19,73 @@
   min-height: 40px;
   max-height: 200px;
   padding: 0.75rem;
-  border: 1px solid #d1d5db;
+  border: 1px solid rgba(197, 171, 110, 0.2);
   border-radius: 6px;
-  font-family: inherit;
+  font-family: var(--cc-font-body);
   font-size: 0.9375rem;
+  background: var(--cc-surface-void);
+  color: var(--cc-text-primary);
   resize: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color var(--cc-duration-normal), box-shadow var(--cc-duration-normal);
 }
 
 .input:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: var(--cc-gold-400);
+  box-shadow: 0 0 0 3px rgba(197, 171, 110, 0.15);
 }
 
 .input:disabled {
-  background: #f3f4f6;
-  color: #9ca3af;
+  background: rgba(197, 171, 110, 0.05);
+  color: rgba(240, 233, 208, 0.5);
+}
+
+.input::placeholder {
+  color: rgba(240, 233, 208, 0.4);
 }
 
 .sendBtn {
   padding: 0.75rem 1.5rem;
   height: 40px;
-  background: #3b82f6;
-  color: white;
+  background: var(--cc-gradient-amber);
+  color: var(--cc-surface-void);
   border: none;
   border-radius: 6px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.875rem;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all var(--cc-duration-normal);
   white-space: nowrap;
+  font-family: var(--cc-font-body);
 }
 
 .sendBtn:hover:not(:disabled) {
-  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: var(--cc-glow-gold-md);
 }
 
 .sendBtn:disabled {
-  background: #d1d5db;
+  background: rgba(197, 171, 110, 0.2);
+  color: rgba(240, 233, 208, 0.4);
   cursor: not-allowed;
+  transform: none;
 }
 
 .secondaryBtn {
   padding: 0.5rem 1rem;
-  background: #f3f4f6;
-  color: #374151;
-  border: 1px solid #d1d5db;
+  background: rgba(197, 171, 110, 0.1);
+  color: var(--cc-gold-400);
+  border: 1px solid rgba(197, 171, 110, 0.2);
   border-radius: 6px;
   font-size: 0.875rem;
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
+  transition: all var(--cc-duration-normal);
+  font-family: var(--cc-font-body);
+  font-weight: 500;
 }
 
 .secondaryBtn:hover {
-  background: #e5e7eb;
-  border-color: #9ca3af;
+  background: rgba(197, 171, 110, 0.15);
+  border-color: var(--cc-gold-400);
+  transform: translateY(-1px);
 }

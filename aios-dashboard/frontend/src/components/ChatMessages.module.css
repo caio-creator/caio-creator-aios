@@ -1,10 +1,12 @@
 .container {
   flex: 1;
   overflow-y: auto;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background: var(--cc-surface-void);
+  font-family: var(--cc-font-body);
 }
 
 .emptyState {
@@ -16,23 +18,37 @@
 
 .emptyContent {
   text-align: center;
-  color: #9ca3af;
+  color: var(--cc-text-secondary, rgba(240, 233, 208, 0.6));
 }
 
 .emptyTitle {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #374151;
+  color: var(--cc-text-primary);
+  font-family: var(--cc-font-display);
 }
 
 .emptyText {
   font-size: 0.9375rem;
+  color: var(--cc-text-secondary, rgba(240, 233, 208, 0.6));
 }
 
 .message {
   display: flex;
   margin-bottom: 0.5rem;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .message.user {
@@ -48,20 +64,22 @@
   padding: 0.75rem 1rem;
   border-radius: 12px;
   font-size: 0.9375rem;
-  line-height: 1.5;
+  line-height: 1.6;
   word-wrap: break-word;
   white-space: pre-wrap;
 }
 
 .message.user .bubble {
-  background: #3b82f6;
-  color: white;
+  background: var(--cc-gradient-saturn);
+  color: var(--cc-text-primary);
   border-bottom-right-radius: 4px;
+  font-weight: 500;
 }
 
 .message.assistant .bubble {
-  background: #f3f4f6;
-  color: #1f2937;
+  background: rgba(197, 171, 110, 0.08);
+  color: var(--cc-text-primary);
+  border: 1px solid rgba(197, 171, 110, 0.15);
   border-bottom-left-radius: 4px;
 }
 
@@ -69,7 +87,7 @@
   display: inline-block;
   width: 2px;
   height: 1em;
-  background: #6b7280;
+  background: var(--cc-gold-400);
   animation: blink 1s infinite;
   margin-left: 2px;
 }

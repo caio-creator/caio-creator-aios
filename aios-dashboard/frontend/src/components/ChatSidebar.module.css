@@ -1,29 +1,32 @@
 .sidebar {
   width: 240px;
-  border-right: 1px solid #e5e7eb;
-  background: #f9fafb;
+  border-right: 1px solid rgba(197, 171, 110, 0.15);
+  background: var(--cc-surface-active);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem 0.75rem;
   overflow-y: auto;
+  font-family: var(--cc-font-body);
 }
 
 .newBtn {
   padding: 0.75rem;
-  background: #3b82f6;
-  color: white;
+  background: var(--cc-gradient-amber);
+  color: var(--cc-surface-void);
   border: none;
   border-radius: 6px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.875rem;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all var(--cc-duration-normal);
   white-space: nowrap;
+  font-family: var(--cc-font-body);
 }
 
 .newBtn:hover {
-  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: var(--cc-glow-gold-md);
 }
 
 .sessionsList {
@@ -36,7 +39,7 @@
 
 .empty {
   text-align: center;
-  color: #9ca3af;
+  color: rgba(240, 233, 208, 0.5);
   font-size: 0.8125rem;
   padding: 1rem 0.5rem;
 }
@@ -44,11 +47,11 @@
 .sessionItem {
   text-align: left;
   padding: 0.75rem;
-  background: white;
-  border: 1px solid transparent;
+  background: rgba(197, 171, 110, 0.05);
+  border: 1px solid rgba(197, 171, 110, 0.1);
   border-radius: 6px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all var(--cc-duration-normal);
   font-size: 0.8125rem;
   display: flex;
   flex-direction: column;
@@ -56,35 +59,39 @@
 }
 
 .sessionItem:hover {
-  background: #f3f4f6;
-  border-color: #d1d5db;
+  background: rgba(197, 171, 110, 0.1);
+  border-color: rgba(197, 171, 110, 0.2);
 }
 
 .sessionItem.active {
-  background: #e0e7ff;
-  border-color: #3b82f6;
-  color: #1e40af;
+  background: rgba(197, 171, 110, 0.15);
+  border-color: var(--cc-gold-400);
+  color: var(--cc-gold-400);
 }
 
 .title {
-  font-weight: 500;
-  color: #374151;
+  font-weight: 600;
+  color: var(--cc-text-primary);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   display: block;
+  font-family: var(--cc-font-display);
 }
 
 .sessionItem.active .title {
-  color: #1e40af;
+  color: var(--cc-gold-400);
 }
 
 .agent {
   font-size: 0.75rem;
-  color: #9ca3af;
+  color: rgba(240, 233, 208, 0.5);
   text-transform: uppercase;
+  font-family: var(--cc-font-mono);
+  letter-spacing: 0.05em;
+  font-weight: 500;
 }
 
 .sessionItem.active .agent {
-  color: #3b82f6;
+  color: var(--cc-gold-400);
 }

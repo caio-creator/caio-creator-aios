@@ -3,12 +3,19 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.375rem 0.75rem;
-  background: rgba(var(--color-rgb), 0.08);
-  border: 1px solid rgba(var(--color-rgb), 0.2);
+  background: rgba(197, 171, 110, 0.08);
+  border: 1px solid rgba(197, 171, 110, 0.2);
   border-radius: 6px;
   font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--color);
+  font-weight: 600;
+  color: var(--cc-gold-400);
+  font-family: var(--cc-font-body);
+  transition: all var(--cc-duration-normal);
+}
+
+.badge:hover {
+  background: rgba(197, 171, 110, 0.12);
+  border-color: var(--cc-gold-400);
 }
 
 .icon {
