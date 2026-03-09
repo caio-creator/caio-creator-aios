@@ -22,10 +22,11 @@ export interface Session {
 
 const DB_PATH = path.join(os.homedir(), '.aios-chat', 'sessions.db');
 
-class SessionStore {
+class SQLiteSessionStore {
   private db: Database.Database;
 
   constructor() {
+    // Ensure directory exists
     const dbDir = path.dirname(DB_PATH);
     if (!fs.existsSync(dbDir)) {
       fs.mkdirSync(dbDir, { recursive: true });
@@ -122,7 +123,7 @@ class SessionStore {
 
     return sessions.map(session => ({
       ...session,
-      messages: [],
+      messages: [], // Don't include messages in list view
       clientSlug: session.clientSlug || undefined,
       model: session.model || undefined,
     }));
@@ -142,6 +143,7 @@ class SessionStore {
 
     stmt.run(id, sessionId, message.role, message.content, now);
 
+    // Update session updated_at
     const updateStmt = this.db.prepare(`
       UPDATE sessions SET updated_at = ? WHERE id = ?
     `);
@@ -175,6 +177,10 @@ class SessionStore {
 
     return this.getSession(sessionId);
   }
+
+  close() {
+    this.db.close();
+  }
 }
 
-export const sessionStore = new SessionStore();
+export const sessionStore = new SQLiteSessionStore();
